@@ -35,8 +35,10 @@ while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
 <?php } ?>
 
 <a href="<?php the_permalink(); ?>">
+<div class="hidden-proj-details-top">
 <div class="featureproject">Featured Project:</div>
 <h3 class="home-h3"><?php the_title(); ?> &raquo;</h3>
+</div>
 
    </a>  
    
@@ -67,6 +69,8 @@ $wp_query->query(array(
 	'hero' => "yes"
 ));
 while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
+
+
 <div class="home-square-2" >
 <?php  if ( has_post_thumbnail() ) { ?>
 <div class="home-thumbnail"><?php the_post_thumbnail('home-thumbnail'); ?></div>
@@ -74,8 +78,10 @@ while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
 <div class="home-thumbnail"><img src="<?php bloginfo('template_url'); ?>/images/thumb-default.png" width="200px" height="200px"/></div>
 <?php } ?>
 <a href="<?php the_permalink(); ?>">
+<div class="hidden-proj-details-top">
 <div class="featureproject">Featured Project:</div>
 <h3 class="home-h3"><?php the_title(); ?> &raquo;</h3>
+</div>
 
  </a> 
  
@@ -91,6 +97,10 @@ while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
     
     
 </div><!-- / home square -->
+
+
+
+
  <?php endwhile;   ?>
  <?php  wp_reset_postdata(); ?>
 
@@ -113,8 +123,11 @@ while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
 <div class="home-thumbnail"><img src="<?php bloginfo('template_url'); ?>/images/thumb-default.png" width="200px" height="200px"/></div>
 <?php } ?>
 <a href="<?php the_permalink(); ?>">
-<div class="featureproject">Featured Project:</div>
-<h3 class="home-h3"><?php the_title(); ?> &raquo;</h3>
+
+<div class="hidden-proj-details-top">
+  <div class="featureproject">Featured Project:</div>
+  <h3 class="home-h3"><?php the_title(); ?> &raquo;</h3>
+</div>
   </a>   
   
    <div class="seemore3"><a href="<?php bloginfo('url'); ?>/project-categories/healthcare/">see all</a></div>
@@ -150,8 +163,10 @@ while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
 <div class="home-thumbnail"><img src="<?php bloginfo('template_url'); ?>/images/thumb-default.png" width="200px" height="200px"/></div>
 <?php } ?>
 <a href="<?php the_permalink(); ?>">
-<div class="featureproject">Featured Project:</div>
-<h3 class="home-h3"><?php the_title(); ?> &raquo;</h3>
+<div class="hidden-proj-details-top">
+  <div class="featureproject">Featured Project:</div>
+  <h3 class="home-h3"><?php the_title(); ?> &raquo;</h3>
+  </div>
   </a>  
   
    <div class="seemore4"><a href="<?php bloginfo('url'); ?>/project-categories/mission-critical/">see all</a></div>
@@ -203,8 +218,10 @@ while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
 <div class="home-thumbnail"><img src="<?php bloginfo('template_url'); ?>/images/thumb-default.png" width="200px" height="200px"/></div>
 <?php } ?>
 <a href="<?php the_permalink(); ?>">
+<div class="hidden-proj-details-bottom">
 <div class="featureproject-bottom">Featured Project:</div>
 <h3 class="home-bottom-h3"><?php the_title(); ?> &raquo;</h3>
+</div>
     </a> 
     
      <div class="seemore5"><a href="<?php bloginfo('url'); ?>/project-categories/commercial/">see all</a></div>
@@ -240,8 +257,10 @@ while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
 <div class="home-thumbnail"><img src="<?php bloginfo('template_url'); ?>/images/thumb-default.png" width="200px" height="200px"/></div>
 <?php } ?>
 <a href="<?php the_permalink(); ?>">
+<div class="hidden-proj-details-bottom">
 <div class="featureproject-bottom">Featured Project:</div>
 <h3 class="home-bottom-h3"><?php the_title(); ?> &raquo;</h3>
+</div>
   </a> 
   
    <div class="seemore6"><a href="<?php bloginfo('url'); ?>/project-categories/multi-family/">see all</a></div>
@@ -277,8 +296,10 @@ while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
 <div class="home-thumbnail"><img src="<?php bloginfo('template_url'); ?>/images/thumb-default.png" width="200px" height="200px"/></div>
 <?php } ?>
 <a href="<?php the_permalink(); ?>">
+<div class="hidden-proj-details-bottom">
 <div class="featureproject-bottom">Featured Project:</div>
 <h3 class="home-bottom-h3"><?php the_title(); ?> &raquo;</h3>
+</div>
     </a>
     
      <div class="seemore7"><a href="<?php bloginfo('url'); ?>/project-categories/government/">see all</a></div>
@@ -313,8 +334,10 @@ while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
 <div class="home-thumbnail"><img src="<?php bloginfo('template_url'); ?>/images/thumb-default.png" width="200px" height="200px"/></div>
 <?php } ?>
 <a href="<?php the_permalink(); ?>">
+<div class="hidden-proj-details-bottom">
 <div class="featureproject-bottom">Featured Project:</div>
 <h3 class="home-bottom-h3"><?php the_title(); ?> &raquo;</h3>
+</div>
  </a> 
  
   <div class="seemore8"><a href="<?php bloginfo('url'); ?>/project-categories/more-engineering-projects/">see all</a></div>

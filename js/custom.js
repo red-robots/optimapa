@@ -52,7 +52,7 @@ function printSelection(node){
 
 			function() {
 				//hide heading and caption
-				$(this).children('.square-info-1, .square-info-2, .square-info-3, .square-info-4').stop(false,true).animate({top:5},{duration:200, easing: style});
+				$(this).children('.square-info-1, .square-info-2, .square-info-3, .square-info-4').stop(false,true).animate({top:0},{duration:200, easing: style});
 				$(this).children('.seemore1, .seemore2, .seemore3, .seemore4').stop(true).animate({right:125},{duration:200, easing: style});
 				$('.home-h3').css({display: 'none'});
 			}
@@ -70,7 +70,7 @@ function printSelection(node){
 
 			function() {
 				//hide heading and caption
-				$(this).children('.square-info-5, .square-info-6, .square-info-7, .square-info-8').stop(false,true).animate({top:5},{duration:200, easing: style});
+				$(this).children('.square-info-5, .square-info-6, .square-info-7, .square-info-8').stop(false,true).animate({top:0},{duration:200, easing: style});
 				$(this).children('.seemore5, .seemore6, .seemore7, .seemore8').stop(true).animate({right:125},{duration:200, easing: style});
 				$('.home-bottom-h3').css({display: 'none'});
 				$(this).find('.featureproject-bottom').css({display: 'none'});

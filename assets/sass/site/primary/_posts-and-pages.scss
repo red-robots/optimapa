@@ -55,32 +55,46 @@
 }
 .info-box-words {
 	padding: 20px;
-	width: auto;
-	position: absolute;
-	bottom: 0px;
-	left: 0px;	
+	width: 100%;
 	line-height: 1.2;
+	@media screen and (min-width: $deskwidth) {
+		width: auto;
+		position: absolute;
+		bottom: 0px;
+		left: 0px;
+	}
 }
 .padding20 {
 	padding: 20px;
 	width: auto;	
 }
 .home-square-1, .home-square-2, .home-square-3, .home-square-4, .home-square-5, .home-square-6, .home-square-7, .home-square-8 {
-	float:left;
-	width: 200px;
-	height: 200px;
+	width: 90%;
+	margin: 10px auto;
 	position: relative;
-	margin-left: 5px;
-	padding: 5px;
+	height: 300px;
+	overflow: hidden;
 	@media screen and (min-width: $tabwidth) {
-			
+		width: 50%;
+		float: left;
 	}
 	@media screen and (min-width: $deskwidth) {
-		
+		float:left;
+		width: 200px;
+		height: 200px;
+		margin: 0 0 0 5px;	
+		padding: 5px;
+	}
+	img {
+		width: 100%;
 	}
 }
 .square-info-1, .square-info-2, .square-info-3, .square-info-4, .square-info-5, .square-info-6, .square-info-7, .square-info-8 {
 	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
 	
 	@media screen and (min-width: $tabwidth) {
 			
@@ -98,8 +112,8 @@
 .square-info-7 a {background-image: url(images/div-7-50.png);background-repeat: repeat;}
 .square-info-8 a {background-image: url(images/div-8-50.png);background-repeat: repeat;}
 .home-square-1 a, .home-square-2 a, .home-square-3 a, .home-square-4 a,  .home-square-5 a,  .home-square-6 a,  .home-square-7 a,  .home-square-8 a {
-	width: 200px;
-	height: 200px;
+	width: 100%;
+	height: 100%;
 	float:left;	
 	position: absolute;
 	top: 0;
@@ -115,12 +129,12 @@
 	}
 }
 .square-info-1 a, .square-info-2 a, .square-info-3 a, .square-info-4 a {
-	width: 200px;
-	height: 200px;
-	padding: 5px;
+	width: 100%;
+	height: 100%;
+	padding: 10px;
 	position: absolute;
-	left: -5px;
-	top: -5px;
+	left: -0px;
+	top: -0px;
 	display: block;
 	
 	text-decoration: none;
@@ -129,17 +143,19 @@
 			
 	}
 	@media screen and (min-width: $deskwidth) {
-		
+		left: -0px;
+		top: -0px;
+		padding: 5px;
 	}
 	
 }
 .square-info-5 a, .square-info-6 a, .square-info-7 a, .square-info-8 a{
-	width: 200px;
-	height: 200px;
+	width: 100%;
+	height: 100%;
 	padding: 5px;
 	position: absolute;
-	left: -5px;
-	top: -5px;
+	left: -0px;
+	top: -0px;
 	display: block;
 	text-decoration: none;
 	color: #fff;
@@ -151,8 +167,10 @@
 	}
 }
 .home-thumbnail {
-	width: 200px;
-	height: 200px;
+	// width: 200px;
+	// height: 200px;
+	width: 100%;
+	height: 100%;
 	position: absolute;
 	top: 0px;
 	left: 0px;	
@@ -199,8 +217,27 @@
 .home-h3 a:hover {
 	display: block;
 }
+.hidden-proj-details-top {
+	width: 100%;
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+	@media screen and (min-width: $deskwidth) {
+		bottom: 0px;
+	}
+}
+.hidden-proj-details-bottom {
+	width: 100%;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	@media screen and (min-width: $deskwidth) {
+		// top: 0px;
+		// bottom: auto;
+	}
+}
 .featureproject {
-	margin-top: 110px;
+	// margin-top: 110px;
 	color: #fff;	
 	text-shadow: 1px 1px 1px #000;
 	
