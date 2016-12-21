@@ -1,0 +1,431 @@
+* { -webkit-hyphens: none; }
+div {
+	/* These are technically the same, but use both */
+	
+}
+body {
+	background-image:url(images/bg.png);
+	background-repeat:repeat-x;
+	background-color: #fff;
+	margin: 0px;
+	background-position: top;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+}
+.clear {clear: both;}
+.wrapper {
+	width: 100%;
+	margin: 0px auto;
+	padding: 20px;
+	
+	@media screen and (min-width: $tabwidth) {
+		width: 100%;
+	}
+	@media screen and (min-width: $deskwidth) {
+		width: 1200px;
+		padding: 0px;
+	}
+}
+
+.content-area {
+	width: 100%;
+	margin: 0px auto;
+	
+	@media screen and (min-width: $tabwidth) {
+		width: 66%;
+		float: left;
+		margin: 0;
+	}
+	@media screen and (min-width: $deskwidth) {
+		/*width: 1200px;*/
+	}
+}
+
+.widget-area {
+	width: 100%;
+	margin: 0px auto;
+	
+	@media screen and (min-width: $tabwidth) {
+		width: 26%;
+		float: right;
+		margin: 0;
+	}
+	@media screen and (min-width: $deskwidth) {
+		/*width: 1200px;*/
+	}
+}
+
+/* Logo */
+.logo , h1.logo {
+	width: 283px;
+	height: 170px;
+	background-image: url(images/logo.png);	
+	margin: 0px auto 10px auto;
+
+	@media screen and (min-width: $tabwidth) {
+		
+		float: left;
+		margin: 0;
+	}
+	@media screen and (min-width: $deskwidth) {
+		/*width: 1200px;*/
+	}
+}
+.logo a, h1.logo a {
+	width: 283px;
+	height: 170px;
+	display: block;
+	text-indent: -9000px;
+
+	@media screen and (min-width: $tabwidth) {
+		
+	}
+	@media screen and (min-width: $deskwidth) {
+		
+	}
+}
+#footer {
+	width: 100%;
+	background-color:#7C7570;
+	font-size: 16px;
+	color: #FFF;
+}
+#header-right {
+	width: 100%;
+	float:right;
+	@media screen and (min-width: $tabwidth) {
+		width: auto;
+	}
+	@media screen and (min-width: $deskwidth) {
+		// width: 870px;
+		// height: 170px;
+	}
+}
+#header-right-top {
+	width: 100%;
+	float:right;
+	margin-top: 5px;
+	@media screen and (min-width: $tabwidth) {
+		
+	}
+	@media screen and (min-width: $deskwidth) {
+		width: 660px;
+	}
+}
+.twitter {
+	width: 40px;
+	height: 40px;	
+	float: left;
+	margin-left: 10px;
+	text-indent: -9000px;
+	background-image: url(images/twitter.png);
+	a {
+		width: 40px;
+		height: 40px;	
+		display: block;
+	}
+}
+
+#topbar {
+	width: 100%;
+	text-align: center;
+	float:left;
+	position: relative;	
+	ul {
+		width: auto;
+		display: inline-block;
+		padding: 0px;
+		margin: 10px 0px;
+		@media screen and (min-width: $tabwidth) {
+			margin: 0px;
+			position: absolute;
+			top: 40px; 
+			right: 0;
+			width: 360px;
+		}
+		@media screen and (min-width: $midwidth) {
+			width: 380px;
+			top: auto; 
+			right: auto;
+			position: relative;
+			float:left;	
+		}
+	}
+	a { 
+		display: inline-block;
+		color: $color-optima-grey;
+		text-decoration:none;
+		margin: 0 5px;
+		font-size: 14px;
+		padding: 5px;
+		@media screen and (min-width: $tabwidth) {
+
+		}
+		@media screen and (min-width: $midwidth) {
+			margin-left: 10px;	
+			color: #fff;
+			font-size: 12px;
+			margin: 0 ;
+		}
+		@media screen and (min-width: $deskwidth) {
+			font-size: 14px;
+			margin: 0 5px;
+		}
+		&:hover{
+			color: $color-optima-grey;
+		}
+	}
+	li {
+		display: inline-block;	
+
+	}
+}
+
+#search {
+	width: 80%;
+	margin: 10px auto;
+	text-align: center;
+
+	@media screen and (min-width: $tabwidth) {
+		width: 200px;	
+		float:left;	
+		margin: -1px 0 0 0;
+	}
+	@media screen and (min-width: $deskwidth) {
+		
+	}
+}
+input#searchinput.topsearch {
+	-moz-border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius:5px 5px 5px 5px;
+	border-radius: 5px 5px 5px 5px; /* future proofing */
+	-khtml-border-radius:5px 5px 5px 5px; /* for old Konqueror browsers */
+	background-color:  $color-optima-grey;
+	color: #fff;
+	padding: 5px;
+	width: 188px;
+	text-align: right;
+	border: 1px solid #7C7570;
+}
+input[type=text] {
+	
+}
+#main {
+	width: 96%;
+	margin: 0px auto;	
+	overflow: hidden;
+	padding-bottom: 20px;
+	@media screen and (min-width: $tabwidth) {
+			
+	}
+	@media screen and (min-width: $deskwidth) {
+		width: 1200px;
+	}
+}
+.aboutcol1 {
+	width: 100%;
+	@media screen and (min-width: $tabwidth) {
+			
+	}
+	@media screen and (min-width: $deskwidth) {
+		width: 500px;
+	}
+}
+/*  
+	Page Structure  
+*/
+/*  
+	site map Structure  
+*/
+.sitemap-column {
+	
+	float:left;
+	margin-right: 30px;
+	@media screen and (min-width: $tabwidth) {
+			
+	}
+	@media screen and (min-width: $deskwidth) {
+		width: 300px;
+	}
+	h3{
+		margin-top: 30px;
+	}
+}
+
+.searchtitle {
+	width: 100%;
+	float:left;
+	margin-bottom: 30px;
+	border-bottom: #ccc solid 3px;	
+	@media screen and (min-width: $tabwidth) {
+			
+	}
+	@media screen and (min-width: $deskwidth) {
+		width: 700px;
+	}
+}
+#page-content {
+	width: 100%;
+	float:left;
+	
+	font-size: 16px;
+	line-height: 25px;
+	color: #000;
+	@media screen and (min-width: $tabwidth) {
+			
+	}
+	@media screen and (min-width: $deskwidth) {
+		width: 1150px;
+		min-height: 500px;
+		padding: 30px 0px 50px 50px;
+	}
+	h1{
+		width: 100%;
+		color: $color-red;
+		margin-bottom: 15px;
+		margin-top: 15px;
+
+		@media screen and (min-width: $midwidth) {
+			width: auto;
+		}
+	}
+	h2{
+		color: $color-red;
+		margin-bottom: 20px;
+	}
+	img {
+		width: 100%;
+		margin-top: 15px;
+		@media screen and (min-width: $tabwidth) {
+			width: auto;
+			margin-top:-15px;
+		}
+	}
+	img.gfield_captcha {
+		width: auto;
+	}
+}
+#page-left {
+	width: 100%;
+	float:left;	
+	
+	@media screen and (min-width: $tabwidth) {
+		width: 60%;
+	}
+	@media screen and (min-width: $deskwidth) {
+		width: 680px;
+		padding-right: 40px;
+	}
+}
+#page-right {
+	width: 100%;
+	float:right;	
+	@media screen and (min-width: $tabwidth) {
+		width: 40%;
+	}
+	@media screen and (min-width: $deskwidth) {
+		width: 690px;
+	}
+}
+#page-tax {
+	width: 100%;
+	float:left;	
+	margin-bottom: 30px;
+	@media screen and (min-width: $tabwidth) {
+			
+	}
+	@media screen and (min-width: $deskwidth) {
+		// width: 1150px;
+	}
+}
+.post {
+	width: 100%;
+	float:left;
+	@media screen and (min-width: $tabwidth) {
+			
+	}
+	@media screen and (min-width: $deskwidth) {
+		width: 900px;
+	}
+}	
+#sidebar {
+	width: 100%;
+	@media screen and (min-width: $tabwidth) {
+		width: 33%;	
+		float: right;
+	}
+	@media screen and (min-width: $deskwidth) {
+		width: 270px;
+		padding: 20px;
+		margin-left: 40px;
+		margin-top: 0px;
+	}
+	li {
+		margin-left: 15px;
+	}
+}
+#side-tax {
+	float: left;
+	@media screen and (min-width: $tabwidth) {
+		width: 30%;
+		padding: 20px;
+	}
+	@media screen and (min-width: $deskwidth) {
+		width: 500px;
+	}
+}
+#footer-cont {
+	width: 100%;
+	margin: 40px auto 0px auto;
+	background-color:#7C7570;
+	font-size: 14px;
+	color: #FFF;
+	padding: 20px;
+	text-align:center;
+	@media screen and (min-width: $tabwidth) {
+			
+	}
+	@media screen and (min-width: $deskwidth) {
+		width: 1100px;
+	}
+	a {
+		color: #FFF;
+	}
+}
+
+/* =======================================================================
+						Block Quote
+======================================================================= */
+blockquote {
+	width: 100%;
+	float:left;
+	/*background: #f9f9f9;*/
+	margin:  10px 30px 10px 0px;
+	padding:  10px;
+	border-top-width: 6px;
+	border-bottom-width: 6px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #E5E5E5;
+	border-bottom-color: #E5E5E5;
+	/*quotes: "\201C""\201D""\2018""\2019";*/
+	color: $color-red;
+	 font-size: 22px;
+	 @media screen and (min-width: $tabwidth) {
+			
+	}
+	@media screen and (min-width: $midwidth) {
+		width: 280px;
+	}
+}
+blockquote:before {
+  /*color: #ccc;
+  content: open-quote;
+  font-size: 30px;
+  line-height: 22px;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;*/
+}
+blockquote p {
+  display: inline;
+}

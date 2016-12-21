@@ -1,0 +1,31 @@
+$color__link : #8D1222;
+a {
+	color: $color__link;
+	text-decoration: none;
+	/*&:visited {
+		color: $color__link-visited;
+	}*/
+	&:hover,
+	&:focus,
+	&:active {
+		color: #C61930;
+	}
+	&:focus {
+		outline: thin dotted;
+	}
+	&:hover,
+	&:active {
+		outline: 0;
+	}
+}
+
+a, img {
+    border:none;
+}
+
+#the-content a {
+	text-decoration: underline;
+}
+
+
+	

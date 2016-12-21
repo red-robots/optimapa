@@ -1,0 +1,92 @@
+/*
+     Comments
+*/
+ol.commentlist { list-style:none; margin:0; padding:0; }
+ol.commentlist li {
+	border:1px solid #d5d5d5;
+	
+	margin:0 0 10px;
+	padding:5px 7px 5px 64px;
+	position:relative;
+	list-style-type: none;
+}
+ol.commentlist li.pingback comment-author {
+	padding:0 170px 0 0;
+	background-color: #F6FFED;
+}
+ol.commentlist li div.vcard {font-size: .8em; line-height: 1.5em;  }
+ol.commentlist li div.vcard cite.fn { font-weight:bold; font-size: 1.3em; }
+ol.commentlist li div.vcard cite.fn a.url { color:#cc0000; text-decoration:none; }
+ol.commentlist li div.vcard cite.fn a.url:hover { color:#000; }
+ol.commentlist li div.vcard img.avatar {
+	background: #fff;
+	border:1px solid #aaa;
+	padding: 5px;
+	left:7px;
+	position:absolute;
+	top:7px;
+	margin-left: -60px;
+}
+ol.commentlist li div.comment-meta {
+	position:absolute;
+	right:5px;
+	text-align:right;
+	top:0px;
+	font-size: .7em;
+	color: #333333;
+}
+ol.commentlist li div.comment-meta a {
+	color:#666666;
+	text-decoration:none;
+}
+ol.commentlist li p {
+	margin-top: 20px;
+	margin-right: 0;
+	margin-bottom: 12px;
+	margin-left: 0;
+}
+ol.commentlist li ul {list-style:square; margin:0 0 12px; padding:0; }
+ol.commentlist li div.reply {
+	border:1px solid #999999;
+	color:#333333;
+	padding-left:3px;padding-right:3px;
+	text-align:center;
+	font-family: helvetica, arial, sans-serif;
+	font-size: .8em;
+	font-weight: bold;
+	background-color: #CCCCCC;
+	width: 50px;
+}
+ol.commentlist li div.reply:hover {
+	background:#cc0000;
+	border:1px solid #cc0000;
+	color: #FFFFFF;
+}
+ol.commentlist li div.reply a { color:#fff; text-decoration:none; text-transform:uppercase; }
+ol.commentlist li ul.children { list-style:none; margin:12px 0 0; text-indent:0; }
+ol.commentlist li ul.children li.depth-2 { margin:0 0 3px; }
+ol.commentlist li ul.children li.depth-3 { margin:0 0 3px; }
+ol.commentlist li ul.children li.depth-4 { margin:0 0 3px; }
+ol.commentlist li ul.children li.depth-5 { margin:0 0 3px; }
+ol.commentlist ul.children li.odd { /*background:#fff;*/ }
+ol.commentlist ul.children li.even {/* background:#f6f6f6;*/ }
+ol.commentlist li.pingback div.vcard { padding:0 170px 0 0; }
+
+
+ol.pings li {
+	border:1px solid #d5d5d5;
+	margin:0 0 10px;
+	padding:5px 7px 5px 64px;
+	position:relative;
+	list-style-type: none;
+	line-height: 1.3em;
+}
+ol.pings {
+	width: auto;
+	font-size: .7em;
+}
+
+ol.pings h3 {
+	font-size: .9em;
+}
+

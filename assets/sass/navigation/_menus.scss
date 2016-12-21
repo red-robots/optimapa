@@ -1,0 +1,260 @@
+.main-navigation {
+	clear: both;
+	display: block;
+	float: left;
+	width: 100%;
+	text-align: center;
+	@media screen and (min-width: $tabwidth) {
+
+	}
+	@media screen and (min-width: $midwidth) {
+		width: auto;
+		margin-top: 60px;
+		float: right;
+		clear: none;
+	}
+	@media screen and (min-width: $deskwidth) {
+		margin-right: 15px;
+		font-size: 20px;
+	}
+
+	ul {
+		display: none;
+		list-style: none;
+		margin: 0;
+		padding-left: 0;
+		text-indent: 0;
+
+		ul {
+			width: 100%;
+			background-color: #efefef;
+			float: left;
+			
+			z-index: 99999;
+			@media screen and (min-width: $tabwidth) {
+				position: absolute;
+				top: 2em;
+				right: -999em;
+				width: auto;
+			}
+
+			ul {
+				right: -999em;
+				top: 0;
+			}
+
+			li {
+				font-size: 14px;
+				@media screen and (min-width: $tabwidth) {
+					text-align: left;
+					margin: 0;
+					padding: 0;
+				}
+				&:hover > ul,
+				&.focus > ul {
+					left: 100%;
+				}
+			}
+
+			a {
+				width: 200px;
+
+			}
+
+			:hover > a,
+			.focus > a {
+				background-color: #fff;
+			}
+
+			a:hover,
+			a.focus {
+			}
+		}
+
+		li:hover > ul,
+		li.focus > ul {
+			right: 0;
+		}
+	}
+	li {
+		
+		position: relative;
+		width: 100%;
+		display: inline-block;
+		list-style: none;
+		@media screen and (min-width: $tabwidth) {
+			margin: 0;
+			width: auto;
+		}
+		@media screen and (min-width: $midwidth) {
+			float: left;
+		}
+		@media screen and (min-width: $deskwidth) {
+			font-size: 18px;
+			margin-left: 10px;
+		}
+
+		&:hover > a,
+		&.focus > a {
+		}
+	}
+	a {
+		display: inline-block;
+		text-decoration: none;
+		border-bottom: 0;
+		color: #6a6a6a;
+		padding: 6px 10px;
+		white-space: nowrap;
+		@include transition(all ease .3s);
+		&:hover {
+			color: #000;
+			background: #efefef;
+		}
+
+	}
+
+	.current_page_item > a,
+	.current-menu-item > a,
+	.current_page_ancestor > a,
+	.current-menu-ancestor > a {
+	}
+}
+
+/* Small menu. */
+.menu-toggle,
+.main-navigation.toggled ul {
+	display: block;
+	// background-color: $color-green;
+	ul.sub-menu {
+		// background-color: rgba(255,255,255,.1);
+	}
+	
+}
+
+
+@media screen and (min-width: $tabwidth) {
+	.menu-toggle {
+		display: none;
+	}
+	.main-navigation ul {
+		display: block;
+	}
+}
+button.menu-toggle {
+	border: 0px;
+	text-shadow: none;
+	background-color: $color-optima-grey;
+	color: #fff;
+	box-shadow: none;
+	width: auto;
+	display: inline-block;
+	margin: 10px auto;
+	border-radius: 0;
+	text-transform: uppercase;
+	font: {
+		
+		weight :300;
+		size: 20px;
+	}
+	
+	@media screen and (min-width: $tabwidth) {
+		display: none;
+	}
+}
+
+.comment-navigation,
+.posts-navigation,
+.post-navigation {
+
+	.site-main & {
+		margin: 0 0 1.5em;
+		overflow: hidden;
+	}
+
+	.nav-previous {
+		float: left;
+		width: 50%;
+	}
+
+	.nav-next {
+		float: right;
+		text-align: right;
+		width: 50%;
+	}
+}
+
+
+// #main-navigation ul.nav-menu,
+// 	#main-navigation div.nav-menu > ul {
+// 		border-bottom: 1px solid #ededed;
+// 		border-top: 1px solid #ededed;
+// 		display: inline-block !important;
+// 		text-align: left;
+// 		width: 100%;
+// 	}
+// 	#main-navigation ul {
+		
+// 	}
+// 	#main-navigation li a,
+// 	#main-navigation li {
+		
+// 	}
+// 	#main-navigation li a {
+		
+// 	}
+// 	#main-navigation li a:hover {
+		
+// 		// padding: 6px 10px;
+// 	}
+// 	#main-navigation li {
+		
+// 	}
+// 	#main-navigation li ul {
+// 		// display: none;
+// 		// margin: 0px 0px 0px -0px;
+// 		// padding: 0;
+// 		// position: absolute;
+// 		// top: 100%;
+// 		// right: 0px;
+// 		// z-index: 1;
+// 	}
+// 	#main-navigation li ul.leftul {
+// 		display: none;
+// 		margin: 0px 0px 0px -0px;
+// 		padding: 0;
+// 		position: absolute;
+// 		top: 100%;
+// 		z-index: 1;
+// 		text-align: right;
+// 	}
+// 	#main-navigation li ul ul {
+// 		// top: 0;
+// 		// right: 100%;
+// 	}
+// 	#main-navigation ul li:hover > ul {
+// 		// border-left: 0;
+// 		// display: block;
+// 	}
+// 	#main-navigation li ul li a {
+// 		background: #efefef;
+// 		border-bottom: 1px solid #ededed;
+// 		display: block;
+// 		font-size: 14px;		
+// 		padding: 6px 10px;
+// 		width: 220px;
+// 		white-space: normal;
+// 	}
+// 	#main-navigation li ul li a:hover {
+// 		background: #e3e3e3;
+// 		color: #444;
+// 	}
+// 	#main-navigation .current-menu-item > a,
+// 	#main-navigation .current-menu-ancestor > a,
+// 	#main-navigation .current_page_item > a,
+// 	#main-navigation .current_page_ancestor > a {
+// 	color: #636363;
+// 	border-bottom-width: 4px;
+// 	border-bottom-style: solid;
+// 	border-bottom-color: #E9E9E9;		/*font-weight:bold;*/
+		
+// 	}
