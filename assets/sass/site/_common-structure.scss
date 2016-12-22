@@ -279,7 +279,7 @@ input[type=text] {
 		min-height: 500px;
 		padding: 30px 0px 50px 50px;
 	}
-	h1{
+	h1 {
 		width: 100%;
 		color: $color-red;
 		margin-bottom: 15px;
@@ -289,9 +289,20 @@ input[type=text] {
 			width: auto;
 		}
 	}
-	h2{
+	h2 {
 		color: $color-red;
 		margin-bottom: 20px;
+		@media screen and (min-width: $tabwidth) {
+
+		}
+	}
+	h2.uni {
+		color: $color-red;
+		margin-bottom: 20px;
+		margin-top: 35px;
+		@media screen and (min-width: $tabwidth) {
+			margin-top: 0px;
+		}
 	}
 	img {
 		width: 100%;

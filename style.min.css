@@ -1443,7 +1443,9 @@ body{background-image:url(images/bg.png);background-repeat:repeat-x;background-c
 }#page-content h1{width:100%;color:#8d1222;margin-bottom:15px;margin-top:15px}
 @media screen and (min-width:960px){#page-content h1{width:auto}
 }#page-content h2{color:#8d1222;margin-bottom:20px}
-#page-content img{width:100%;margin-top:15px}
+#page-content h2.uni{color:#8d1222;margin-bottom:20px;margin-top:35px}
+@media screen and (min-width:600px){#page-content h2.uni{margin-top:0}
+}#page-content img{width:100%;margin-top:15px}
 @media screen and (min-width:600px){#page-content img{width:auto;margin-top:-15px}
 }#page-content img.gfield_captcha{width:auto}
 #page-left{width:100%;float:left}

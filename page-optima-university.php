@@ -58,7 +58,7 @@ $the_query = new WP_Query( $featuredargs ); ?>
 
      
      <div class="featured-event-summary">
-      <h2><?php the_title(); ?></h2>
+      <h2 class="uni"><?php the_title(); ?></h2>
  <?php $date = DateTime::createFromFormat('Ymd', get_field('event_date'));
 		echo $date->format('F d, Y'); ?>
 	 <?php the_field('event_summary'); ?>
