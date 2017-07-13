@@ -84,6 +84,43 @@ body {
 		
 	}
 }
+/* Logo */
+.logo-25 , h1.logo-25 {
+	// width: 283px;
+	// height: 246px;
+	width: 200px;
+	height: 174px;
+	background: {
+		image: url(images/optima-25.jpg);
+		size: cover;
+	}	
+	margin: 0px auto 10px auto;
+
+	@media screen and (min-width: $tabwidth) {
+		
+		float: left;
+		margin: 0;
+	}
+	@media screen and (min-width: $deskwidth) {
+		/*width: 1200px;*/
+		margin: 45px 0 0 20px;
+	}
+}
+.logo-25 a, h1.logo-25 a {
+	// width: 283px;
+	// height: 246px;
+	width: 200px;
+	height: 174px;
+	display: block;
+	text-indent: -9000px;
+
+	@media screen and (min-width: $tabwidth) {
+		
+	}
+	@media screen and (min-width: $deskwidth) {
+		
+	}
+}
 #footer {
 	width: 100%;
 	background-color:#7C7570;

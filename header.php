@@ -37,13 +37,19 @@ wp_title( '|', true, 'right' ); }?>
 <div id="main">
 
    <?php if(is_front_page()) { ?>
-     <h1 class="logo">
+    <!--  <h1 class="logo">
         <a href="<?php bloginfo('url'); ?>">Optima Engineering</a> 
-      </h1><!-- #logo -->
+      </h1> -->
+      <h1 class="logo-25">
+        <a href="<?php bloginfo('url'); ?>">Optima Engineering</a> 
+      </h1>
     <?php } else { ?>
-      <div class="logo">
+      <!-- <div class="logo">
         <a href="<?php bloginfo('url'); ?>">Optima Engineering</a> 
-      </div><!-- #logo -->
+      </div> -->
+      <div class="logo-25">
+        <a href="<?php bloginfo('url'); ?>">Optima Engineering</a> 
+      </div>
     <?php } ?>
     
     
