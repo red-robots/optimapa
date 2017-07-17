@@ -1425,7 +1425,7 @@ body{background-image:url(images/bg.png);background-repeat:repeat-x;background-c
 #topbar ul{width:auto;display:inline-block;padding:0;margin:10px 0}
 @media screen and (min-width:600px){#topbar ul{margin:0;position:absolute;top:40px;right:0;width:360px}
 }@media screen and (min-width:960px){#topbar ul{width:380px;top:auto;right:auto;position:relative;float:left}
-}#topbar a{display:inline-block;color:#a49b95;text-decoration:none;margin:0 5px;font-size:14px;padding:5px}
+}#topbar a{display:block;color:#a49b95;text-decoration:none;margin:0 5px;font-size:14px;padding:5px}
 @media screen and (min-width:960px){#topbar a{margin-left:10px;color:#fff;font-size:12px;margin:0}
 }@media screen and (min-width:1200px){#topbar a{font-size:14px;margin:0 5px}
 }#topbar a:hover{color:#a49b95}
