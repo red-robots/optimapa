@@ -33,7 +33,11 @@ while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
 <div class="blog-square">
 <a href="<?php the_permalink(); ?>">
 <div class="readmore-nonblock">Read More &raquo;</div>
-<?php if ( has_post_thumbnail() ) { the_post_thumbnail('medium'); } ?>
+
+<div class="blogimg">
+	<?php if ( has_post_thumbnail() ) { the_post_thumbnail('medium'); } ?>
+</div>
+
 
 <h2 class="blog-title">
 <?php if(get_field('alternate_title')!="") { 

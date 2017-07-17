@@ -1006,6 +1006,14 @@
 	position: relative;
 	margin: 10px;
 	border: 4px solid #CCC;
+	.blogimg {
+		width: 100%;
+		margin-top: -5px;
+		img {
+			width :100%;
+			margin: 0;
+		}
+	}
 	@media screen and (min-width: $tabwidth) {
 		width: 30%;	
 	}
@@ -1027,6 +1035,14 @@
 		
 	}
 }	
+#page-content .blogimg {
+	width: 100%;
+	margin-top: -0px;
+	img {
+			width :100%;
+			margin: 0;
+		}
+}
 .blog-square a:hover {
 	// border: 4px solid #999;
 	background-color: #eee;
