@@ -12,7 +12,7 @@ if (has_term('k-12-education','categories')) {$projDetails = "pro-det-k-12"; $re
 		elseif (has_term('healthcare','categories')) {$projDetails = "pro-det-health"; $readMoreColor = "rm-health";$hColor = "color-health";}
 		elseif (has_term('mission-critical','categories')) {$projDetails = "pro-det-mission"; $readMoreColor = "rm-mission";$hColor = "color-mission";}
 		elseif (has_term('commercial','categories')) {$projDetails = "pro-det-comm"; $readMoreColor = "rm-comm";$hColor = "color-comm";}
-		elseif (has_term('multi-family','categories')) {$projDetails = "pro-det-multi"; $readMoreColor = "rm-multi";$hColor = "color-multi";}
+		elseif (has_term('multi-family-mixed-use','categories')) {$projDetails = "pro-det-multi"; $readMoreColor = "rm-multi";$hColor = "color-multi";}
 		elseif (has_term('government','categories')) {$projDetails = "pro-det-gov"; $readMoreColor = "rm-gov";$hColor = "color-gov";}
 		elseif (has_term('more-engineering-projects','categories')) {$projDetails = "pro-det-mo"; $readMoreColor = "rm-mo";$hColor = "color-mo";}
 ?>

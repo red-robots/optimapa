@@ -60,7 +60,7 @@ wp_title( '|', true, 'right' ); }?>
       
       <ul>
         <li><a href="<?php bloginfo('url'); ?>/news-press-optima">What's New</a></li>
-        <li><a href="<?php bloginfo('url'); ?>/engineering-licenses">Professional Licenses</a></li>
+        <li><a href="<?php bloginfo('url'); ?>/about/optima-engineering-careers/">Careers</a></li>
         <li><a href="<?php bloginfo('url'); ?>/contact-optima">Contact Us</a></li>
       </ul>
 

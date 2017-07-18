@@ -177,7 +177,7 @@ while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
  <?php endwhile;   ?>
  <?php  wp_reset_postdata(); ?>
  </div><!-- project box contents-->
-<div class="seeall-projects hover-mission"><a href="<?php bloginfo('url'); ?>/project-categories/multi-family">See all Mission Critical Projects</a></div>
+<div class="seeall-projects hover-mission"><a href="<?php bloginfo('url'); ?>/project-categories/multi-family-mixed-use">See all Mission Critical Projects</a></div>
  </div><!-- project box -->
  
  
@@ -236,14 +236,14 @@ while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
  
  
    <div class="project-box">
-<div class="proj-box-title pro-det-multi"><h2 class="title-multi">Multi-Family Projects</h2></div>
+<div class="proj-box-title pro-det-multi"><h2 class="title-multi">Multi-Family/Mixed Use Projects</h2></div>
 <div class="project-box-contents">
 <?php
 $wp_query = new WP_Query();
 $wp_query->query(array(
 	'post_type'=>'projects',
 	'posts_per_page' => 3,
-	'categories' => 'multi-family',
+	'categories' => 'multi-family-mixed-use',
 ));
 while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
 <div class="proj-post-div">
@@ -260,7 +260,7 @@ while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
  <?php endwhile;   ?>
  <?php  wp_reset_postdata(); ?>
  </div><!-- project box contents-->
-<div class="seeall-projects hover-multi"><a href="<?php bloginfo('url'); ?>/project-categories/multi-family">See all Multi-Family Projects</a></div>
+<div class="seeall-projects hover-multi"><a href="<?php bloginfo('url'); ?>/project-categories/multi-family-mixed-use">See all Multi-Family/Mixed Use Projects</a></div>
  </div><!-- project box -->
  
  
