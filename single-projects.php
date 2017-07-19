@@ -13,7 +13,7 @@ get_header(); ?>
         <li class="health"><a href="<?php bloginfo('url'); ?>/project-categories/healthcare" class="<?php if (has_term('healthcare','categories')) {echo "subactive";}?>">Healthcare</a></li>
         <li class="mission"><a href="<?php bloginfo('url'); ?>/project-categories/mission-critical" class="<?php if (has_term('mission-critical','categories')) {echo "subactive";}?>">Mission Critical</a></li>
         <li class="comm"><a href="<?php bloginfo('url'); ?>/project-categories/commercial" class="<?php if (has_term('commercial','categories')) {echo "subactive";}?>">Commercial</a></li>
-        <li class="multi"><a href="<?php bloginfo('url'); ?>/project-categories/multi-family" class="<?php if (has_term('multi-family','categories')) {echo "subactive";}?>">Multi Family</a></li>
+        <li class="multi"><a href="<?php bloginfo('url'); ?>/project-categories/multi-family-mixed-use" class="<?php if (has_term('multi-family-mixed-use','categories')) {echo "subactive";}?>">Multi Family/Mixed Use</a></li>
         <li class="gov"><a href="<?php bloginfo('url'); ?>/project-categories/government" class="<?php if (has_term('government','categories')) {echo "subactive";}?>">Government</a></li>
         <li class="mo"><a href="<?php bloginfo('url'); ?>/project-categories/more-engineering-projects" class="<?php if (has_term('more-engineering-projects','categories')) {echo "subactive";}?>">More</a></li>
     </ul>
@@ -31,7 +31,7 @@ $nextlink = 'Next Project in K-12 Education';}
 		elseif (has_term('healthcare','categories')) {$projDetails = "pro-det-health-single"; $myTax = 'healthcare';$nextlink = 'Next Project in Healthcare';}
 		elseif (has_term('mission-critical','categories')) {$projDetails = "pro-det-mission-single"; $myTax = 'mission-critical';$nextlink = 'Next Project in Mission Critical';}
 		elseif (has_term('commercial','categories')) {$projDetails = "pro-det-comm-single"; $myTax = 'commercial';$nextlink = 'Next Project in Commercial';}
-		elseif (has_term('multi-family','categories')) {$projDetails = "pro-det-multi-single"; $myTax = 'multi-family';$nextlink = 'Next Project in Multi Family';}
+		elseif (has_term('multi-family-mixed-use','categories')) {$projDetails = "pro-det-multi-single"; $myTax = 'multi-family-mixed-use';$nextlink = 'Next Project in Multi Family/Mixed Use';}
 		elseif (has_term('government','categories')) {$projDetails = "pro-det-gov-single"; $myTax = 'government';$nextlink = 'Next Project in Government';}
 		elseif (has_term('more-engineering-projects','categories')) {$projDetails = "pro-det-mo-single"; $myTax = 'more-engineering-projects';$nextlink = 'Next Project in More Engineering Projects';}
 ?>

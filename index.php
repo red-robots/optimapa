@@ -246,7 +246,7 @@ $wp_query = new WP_Query();
 $wp_query->query(array(
 	'post_type'=>'projects',
 	'posts_per_page' => 1,
-	'categories' => 'multi-family',
+	'categories' => 'multi-family-mixed-use',
 	'hero' => "yes"
 ));
 while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
@@ -263,11 +263,11 @@ while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
 </div>
   </a> 
   
-   <div class="seemore6"><a href="<?php bloginfo('url'); ?>/project-categories/multi-family/">see all</a></div>
+   <div class="seemore6"><a href="<?php bloginfo('url'); ?>/project-categories/multi-family-mixed-use/">see all</a></div>
         
     <div class="square-info-6" >
-    <a href="<?php bloginfo('url'); ?>/project-categories/multi-family/">
-    <h2 class="home-h2">Multi-Family</h2>
+    <a href="<?php bloginfo('url'); ?>/project-categories/multi-family-mixed-use/">
+    <h2 class="home-h2">Multi-Family/Mixed Use</h2>
     <?php the_field('home_page_description', 'categories_7'); ?>
     </a>
     </div><!-- /square info 1 -->
