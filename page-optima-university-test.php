@@ -34,6 +34,7 @@ get_header(); ?>
 
         $image = get_field('image');
         $time = get_field('time');
+         $pdf = get_field('pdf');
 
         // echo '<pre>';
         // print_r($image);
@@ -73,9 +74,11 @@ get_header(); ?>
               <div class="event-button">
                 <a href="<?php the_permalink(); ?>">View Event</a> 
               </div>
-              <div class="event-button">
-                <a href="<?php the_permalink(); ?>">View PDF</a> 
-              </div>
+              <?php if($pdf != '') { ?>
+                <div class="event-button">
+                  <a href="<?php echo $pdf; ?>">View PDF</a> 
+                </div>
+              <?php } ?>
                        
           </div><!-- blog-square -->
         <?php endwhile;/* endif;*/ ?>
