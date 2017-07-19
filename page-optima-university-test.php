@@ -71,9 +71,9 @@ get_header(); ?>
                 </div>
               <?php } ?>
 
-              <div class="event-button">
+              <!-- <div class="event-button">
                 <a href="<?php the_permalink(); ?>">View Event</a> 
-              </div>
+              </div> -->
               <?php if($pdf != '') { ?>
                 <div class="event-button">
                   <a href="<?php echo $pdf; ?>">View PDF</a> 
