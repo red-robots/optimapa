@@ -1891,3 +1891,32 @@ ul.thumbs img {
 	display: block;
 	
 }
+.flexevents {
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+	.blog-square {
+		width: 23%;
+		padding: 1%;
+		.date {
+			width: 100%;
+			margin: 0 0 10px 0;
+		}
+		.event-button {
+			width: 100%;
+			margin: 0 0 10px 0;
+			a {
+				display: block;
+				text-align: center;
+				background-color: $color-red;
+				margin: 0 0 10px 0;
+				color: #fff;
+				&:hover {
+					background-color: $color-optima-grey;
+				}
+			}
+		}
+	}
+}
