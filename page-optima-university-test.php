@@ -41,13 +41,16 @@ get_header(); ?>
         // echo '</pre>';
 
       ?>
-          <div class="blog-square">
-            
+          <div class="opt-u">
+            <div class="left">
               <div class="blogimg">
                 <?php if ( $image != '' ) { ?>
                   <img src="<?php echo $image['url'] ?>" alt="<?php echo $image['alt'] ?>">
                 <?php } ?>
               </div>
+            </div>
+            
+            <div class="right">
               <h2 class="blog-title">
                 <?php if(get_field('alternate_title')!="") {           
                         the_field('alternate_title'); 
@@ -63,7 +66,7 @@ get_header(); ?>
               $date = new DateTime($date);
               ?>
               <div class="date">
-                <?php echo $date->format('m/d/y'); ?>
+                <?php echo $date->format('F d, Y'); ?>
               </div>
               <?php if($time != '') { ?>
                 <div class="date">
@@ -79,6 +82,8 @@ get_header(); ?>
                   <a href="<?php echo $pdf; ?>">View PDF</a> 
                 </div>
               <?php } ?>
+            </div>
+              
                        
           </div><!-- blog-square -->
         <?php endwhile;/* endif;*/ ?>
