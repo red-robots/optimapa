@@ -1819,11 +1819,14 @@ ul.thumbs li img{width:100%}
 a.thumb:focus{outline:0}
 ul.thumbs img{border:0;display:block}
 .flexevents{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;width:100%;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap}
-.flexevents .opt-u{width:100%;padding:1%;border:4px solid #a49b95;margin:0 0 30px 0}
-.flexevents .opt-u .left{width:30%;float:left}
-.flexevents .opt-u .right{width:65%;float:right}
-.flexevents .opt-u .date{width:100%;margin:0 0 10px 0;font-size:1.3rem}
-.flexevents .opt-u h2.blog-title{font-size:2rem;line-height:1.2}
+.flexevents .opt-u{width:100%;padding:3%;border:4px solid #a49b95;margin:0 0 30px 0}
+@media screen and (min-width:600px){.flexevents .opt-u{padding:1%}
+}.flexevents .opt-u .left{width:100%;float:left}
+@media screen and (min-width:600px){.flexevents .opt-u .left{width:30%}
+}.flexevents .opt-u .right{width:100%;float:right}
+@media screen and (min-width:600px){.flexevents .opt-u .right{width:65%}
+}.flexevents .opt-u .date{width:100%;margin:0 0 10px 0;font-size:1.3rem}
+.flexevents .opt-u h2.blog-title{font-size:2rem;line-height:1.2;font-weight:bold}
 .flexevents .opt-u .event-button{width:auto;margin:15px 0 10px 0;display:inline-block}
 .flexevents .opt-u .event-button a{display:block;text-align:center;background-color:#8d1222;margin:0 0 10px 0;color:#fff;padding:15px 25px}
 .flexevents .opt-u .event-button a:hover{background-color:#a49b95}

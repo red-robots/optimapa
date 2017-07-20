@@ -1899,16 +1899,25 @@ ul.thumbs img {
 
 	.opt-u {
 		width: 100%;
-		padding: 1%;
+		padding: 3%;
 		border: 4px solid $color-optima-grey;
 		margin: 0 0 30px 0;
+		@media screen and (min-width: $tabwidth) {
+			padding: 1%;
+		}
 		.left {
-			width: 30%;
+			width: 100%;
 			float: left;
+			@media screen and (min-width: $tabwidth) {
+				width: 30%;
+			}
 		}
 		.right {
-			width: 65%;
+			width: 100%;
 			float: right;
+			@media screen and (min-width: $tabwidth) {
+				width: 65%;
+			}
 		}
 		.date {
 			width: 100%;
@@ -1918,6 +1927,7 @@ ul.thumbs img {
 		h2.blog-title {
 			font-size: 2rem;
 			line-height: 1.2;
+			font-weight: bold;
 		}
 		.event-button {
 			width: auto;
