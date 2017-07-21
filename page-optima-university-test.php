@@ -25,7 +25,7 @@ get_header(); ?>
       'posts_per_page' => -1,
       'meta_key'      => 'event_date',
       'orderby'     => 'meta_value',
-      'order'       => 'ASC'
+      'order'       => 'DESC'
     );
     $the_query = new WP_Query( $featuredargs ); ?>
     <?php if ( $the_query->have_posts() ) : ?>
