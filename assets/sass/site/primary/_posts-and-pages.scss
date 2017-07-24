@@ -1896,6 +1896,10 @@ ul.thumbs img {
 	width: 100%;
 	flex-direction: row;
 	flex-wrap: wrap;
+	@media screen and (min-width: $tabwidth) {
+		width: 70%;
+		float: left;
+	}
 
 	.opt-u {
 		width: 100%;
@@ -1925,13 +1929,14 @@ ul.thumbs img {
 			font-size: 1.3rem;
 		}
 		h2.blog-title {
-			font-size: 2rem;
+			font-size: 1.5rem;
 			line-height: 1.2;
 			font-weight: bold;
+			margin: 0 0 10px 0 !important;
 		}
 		.event-button {
 			width: auto;
-			margin: 15px 0 10px 0;
+			margin: 10px 0 10px 0;
 			display: inline-block;
 
 			a {
@@ -1940,7 +1945,7 @@ ul.thumbs img {
 				background-color: $color-red;
 				margin: 0 0 10px 0;
 				color: #fff;
-				padding: 15px 25px;
+				padding: 10px 25px;
 				&:hover {
 					background-color: $color-optima-grey;
 				}
