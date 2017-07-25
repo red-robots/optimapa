@@ -70,9 +70,9 @@ get_header(); ?>
                 <?php echo $date->format('F Y'); ?>
               </div>
               <?php if($time != '') { ?>
-                <div class="date">
-                  Time: <?php echo $time; ?>
-                </div>
+                <!-- <div class="date">
+                  Time: <?php //echo $time; ?>
+                </div> -->
               <?php } ?>
 
               <!-- <div class="event-button">
