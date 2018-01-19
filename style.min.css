@@ -544,7 +544,7 @@ to{visibility:hidden;-webkit-transform:translate3d(0,-100%,0);transform:translat
  *  Font Awesome 4.5.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
  */@font-face{font-family:'FontAwesome';src:url("./fonts/font-awesome/fontawesome-webfont.eot?v=4.5.0");src:url("./fonts/font-awesome/fontawesome-webfont.eot?v=4.5.0#iefix") format("embedded-opentype"),url("./fonts/font-awesome/fontawesome-webfont.woff2?v=4.5.0") format("woff2"),url("./fonts/font-awesome/fontawesome-webfont.woff?v=4.5.0") format("woff"),url("./fonts/font-awesome/fontawesome-webfont.ttf?v=4.5.0") format("truetype"),url("./fonts/font-awesome/fontawesome-webfont.svg?v=4.5.0#fontawesomeregular") format("svg");font-weight:normal;font-style:normal}
-.fa{display:inline-block;font:normal normal normal 14px / 1 FontAwesome;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+.fa{display:inline-block;font:normal normal normal 14px/1 FontAwesome;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
 .fa-lg{font-size:1.33333em;line-height:.75em;vertical-align:-15%}
 .fa-2x{font-size:2em}
 .fa-3x{font-size:3em}
@@ -1406,10 +1406,10 @@ body{background-image:url(images/bg.png);background-repeat:repeat-x;background-c
 .widget-area{width:100%;margin:0 auto}
 @media screen and (min-width:600px){.widget-area{width:26%;float:right;margin:0}
 }@media screen and (min-width:1200px){}
-.logo,h1.logo{width:283px;height:170px;background-image:url(images/logo.png);margin:0 auto 10px auto}
-@media screen and (min-width:600px){.logo,h1.logo{float:left;margin:0}
-}@media screen and (min-width:1200px){}
-.logo a,h1.logo a{width:283px;height:170px;display:block;text-indent:-9000px}
+.logo,h1.logo{width:283px;height:152px;background-image:url(images/logo.jpg);background-size:cover;margin:45px auto 10px auto}
+@media screen and (min-width:600px){.logo,h1.logo{float:left}
+}@media screen and (min-width:1200px){.logo,h1.logo{margin:45px 0 0 20px}
+}.logo a,h1.logo a{width:283px;height:174px;display:block;text-indent:-9000px}
 .logo-25,h1.logo-25{width:200px;height:174px;background-image:url(images/optima-25.jpg);background-size:cover;margin:0 auto 10px auto}
 @media screen and (min-width:600px){.logo-25,h1.logo-25{float:left;margin:0}
 }@media screen and (min-width:1200px){.logo-25,h1.logo-25{margin:45px 0 0 20px}

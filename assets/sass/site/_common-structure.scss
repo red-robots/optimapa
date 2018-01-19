@@ -58,22 +58,22 @@ body {
 /* Logo */
 .logo , h1.logo {
 	width: 283px;
-	height: 170px;
-	background-image: url(images/logo.png);	
-	margin: 0px auto 10px auto;
+	height: 152px;
+	background-image: url(images/logo.jpg);	
+	background-size: cover;
+	margin: 45px auto 10px auto;
 
 	@media screen and (min-width: $tabwidth) {
 		
 		float: left;
-		margin: 0;
 	}
 	@media screen and (min-width: $deskwidth) {
-		/*width: 1200px;*/
+		margin: 45px 0 0 20px;
 	}
 }
 .logo a, h1.logo a {
 	width: 283px;
-	height: 170px;
+	height: 174px;
 	display: block;
 	text-indent: -9000px;
 
