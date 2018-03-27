@@ -95,6 +95,12 @@
 			array('jquery'), '1.0', true );
 		wp_enqueue_script('custom');
 		
+		wp_register_script(
+			'font-awesome',
+			'https://use.fontawesome.com/8f931eabc1.js',
+			array(), '1.0' );
+		wp_enqueue_script('font-awesome');
+		
 		
 		
 	

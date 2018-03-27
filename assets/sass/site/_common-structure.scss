@@ -1,29 +1,31 @@
-* { -webkit-hyphens: none; }
+* { -webkit-hyphens: none;
+	box-sizing: border-box; }
 div {
 	/* These are technically the same, but use both */
 	
 }
 body {
-	background-image:url(images/bg.png);
-	background-repeat:repeat-x;
-	background-color: #fff;
 	margin: 0px;
-	background-position: top;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 300;
 }
 .clear {clear: both;}
+.clear-bottom::after {
+	clear: both;
+	display: block;
+	content: "";
+}
 .wrapper {
 	width: 100%;
 	margin: 0px auto;
-	padding: 20px;
+	padding-right: 20px !important;
+	padding-left: 20px !important;
 	
 	@media screen and (min-width: $tabwidth) {
 		width: 100%;
 	}
 	@media screen and (min-width: $deskwidth) {
 		width: 1200px;
-		padding: 0px;
 	}
 }
 
@@ -55,35 +57,7 @@ body {
 	}
 }
 
-/* Logo */
-.logo , h1.logo {
-	width: 283px;
-	height: 152px;
-	background-image: url(images/logo.jpg);	
-	background-size: cover;
-	margin: 45px auto 10px auto;
 
-	@media screen and (min-width: $tabwidth) {
-		
-		float: left;
-	}
-	@media screen and (min-width: $deskwidth) {
-		margin: 45px 0 0 20px;
-	}
-}
-.logo a, h1.logo a {
-	width: 283px;
-	height: 174px;
-	display: block;
-	text-indent: -9000px;
-
-	@media screen and (min-width: $tabwidth) {
-		
-	}
-	@media screen and (min-width: $deskwidth) {
-		
-	}
-}
 /* Logo */
 .logo-25 , h1.logo-25 {
 	// width: 283px;
@@ -127,138 +101,7 @@ body {
 	font-size: 16px;
 	color: #FFF;
 }
-#header-right {
-	width: 100%;
-	float:right;
-	@media screen and (min-width: $tabwidth) {
-		width: auto;
-	}
-	@media screen and (min-width: $deskwidth) {
-		// width: 870px;
-		// height: 170px;
-	}
-}
-#header-right-top {
-	width: 100%;
-	float:right;
-	margin-top: 5px;
-	@media screen and (min-width: $tabwidth) {
-		
-	}
-	@media screen and (min-width: $deskwidth) {
-		width: 660px;
-	}
-}
-.twitter {
-	width: 40px;
-	height: 40px;	
-	float: left;
-	margin-left: 10px;
-	text-indent: -9000px;
-	background-image: url(images/twitter.png);
-	a {
-		width: 40px;
-		height: 40px;	
-		display: block;
-	}
-}
 
-#topbar {
-	width: 100%;
-	text-align: center;
-	float:left;
-	position: relative;	
-	ul {
-		width: auto;
-		display: inline-block;
-		padding: 0px;
-		margin: 10px 0px;
-		@media screen and (min-width: $tabwidth) {
-			margin: 0px;
-			position: absolute;
-			top: 40px; 
-			right: 0;
-			width: 360px;
-		}
-		@media screen and (min-width: $midwidth) {
-			width: 380px;
-			top: auto; 
-			right: auto;
-			position: relative;
-			float:left;	
-		}
-	}
-	a { 
-		display: block;
-		color: $color-optima-grey;
-		text-decoration:none;
-		margin: 0 5px;
-		font-size: 14px;
-		padding: 5px;
-		@media screen and (min-width: $tabwidth) {
-
-		}
-		@media screen and (min-width: $midwidth) {
-			margin-left: 10px;	
-			color: #fff;
-			font-size: 12px;
-			margin: 0 ;
-		}
-		@media screen and (min-width: $deskwidth) {
-			font-size: 14px;
-			margin: 0 5px;
-		}
-		&:hover{
-			color: $color-optima-grey;
-		}
-	}
-	li {
-		display: inline-block;	
-
-	}
-}
-
-#search {
-	width: 80%;
-	margin: 10px auto;
-	text-align: center;
-
-	@media screen and (min-width: $tabwidth) {
-		width: 200px;	
-		float:left;	
-		margin: -1px 0 0 0;
-	}
-	@media screen and (min-width: $deskwidth) {
-		
-	}
-}
-input#searchinput.topsearch {
-	-moz-border-radius: 5px 5px 5px 5px;
-	-webkit-border-radius:5px 5px 5px 5px;
-	border-radius: 5px 5px 5px 5px; /* future proofing */
-	-khtml-border-radius:5px 5px 5px 5px; /* for old Konqueror browsers */
-	background-color:  $color-optima-grey;
-	color: #fff;
-	padding: 5px;
-	width: 188px;
-	text-align: right;
-	border: 1px solid #7C7570;
-}
-input[type=text] {
-	
-}
-#main {
-	width: 96%;
-	margin: 0px auto;	
-	overflow: hidden;
-	padding-bottom: 20px;
-	@media screen and (min-width: $tabwidth) {
-			
-	}
-	@media screen and (min-width: $deskwidth) {
-		width: 1200px;
-	}
-}
 .aboutcol1 {
 	width: 100%;
 	@media screen and (min-width: $tabwidth) {
@@ -476,4 +319,158 @@ blockquote:before {
 }
 blockquote p {
   display: inline;
+}
+img {
+	max-width: 100%;
+}
+#masthead {
+	border-bottom: 4px solid $color-red;
+	>.wrapper {
+		@media screen and (min-width: $tabwidth) {
+			@include flexbox();
+			@include flexbox-justify(space-between);
+			@include flexbox-align-content(stretch);
+			@include flexbox-align-items(stretch);
+			padding: 10px 0;
+		}
+		>.col-1 {
+			@media screen and (min-width: $tabwidth){
+				width: 20%;
+			}
+			.logo {
+				margin: 0;
+				a {
+					display: block;
+					img {
+						width: 100%;
+						display: block;
+					}
+				}
+			}
+		}
+		>.col-2 {
+			@media screen and (min-width: $tabwidth){
+				width: 80%;
+				@include flexbox();
+				@include flexbox-justify(flex-start);
+				@include flexbox-align-content(stretch);
+				@include flexbox-align-items(stretch);
+				@include flexbox-direction(column);
+			}
+			#header-right-top {
+				padding: 5px 0 0 0;
+				#topbar {
+					margin: 0 0 20px 0;
+					width: 100%;
+					ul {
+						margin: 0;
+						padding: 0;
+						text-align: center;
+						@media screen and (min-width: $tabwidth) {
+							text-align: right;
+						}
+						@media screen and (min-width: $midwidth) {
+						}
+						li {
+							list-style-type: none;
+							vertical-align: top;
+							margin: 10px 0 0 0;
+							@media screen and (min-width: $tabwidth) {
+								margin: 0 10px;
+								display: inline-block;
+							}
+							@media screen and (min-width: $midwidth) {
+							}
+							&:last-child {
+								margin-right: 0;
+							}
+							&:first-child {
+								margin-top: 0;
+							}
+							a { 
+								color: black;
+								text-transform: uppercase;
+								font-size: 14px;
+								font-weight: 500;
+								display: block;
+								@media screen and (min-width: $tabwidth) {
+
+								}
+								@media screen and (min-width: $midwidth) {
+								}
+								@media screen and (min-width: $deskwidth) {
+								}
+								i {
+									font-size: 30px;
+									line-height: .65;
+									display: block;
+								}
+							}
+						}
+					}
+				}
+			}
+			nav#site-navigation {
+				padding: 0 0 20px 0;
+				text-align: center;
+				@media screen and (min-width: $tabwidth) {
+					margin: auto 0 0 0;
+					text-align: right;
+				}
+				&.toggled {
+					>div {
+						display: block;
+					}
+				}
+				button {
+					margin: 0 0 20px 0;
+					border: 1px solid black;
+					padding: 10px;
+					border-radius: 3px;
+					font-size: 18px;
+					text-shadow: none;
+					box-shadow: none;
+					color: black;
+					background: transparent;
+					@media screen and (min-width: $tabwidth) {
+						display: none;
+					}
+				}
+				>div {
+					display: none;
+					@media screen and (min-width: $tabwidth) {
+						display: block;
+					}
+					ul {
+						margin: 0;
+						padding: 0;
+						li {
+							list-style-type: none;
+							margin: 10px 0 0 0;
+							@media screen and (min-width: $tabwidth) {
+								display: inline-block;
+								margin: 0 10px;
+							}
+							&:last-child {
+								margin-right: 0;
+							}
+							&:first-child {
+								margin-top: 0;
+							}
+							a {
+								font-size: 18px;
+								display: block;
+								font-weight: 500;
+								text-transform: uppercase;
+								color: black;
+							}
+							ul.sub-menu {
+								display: none;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 }

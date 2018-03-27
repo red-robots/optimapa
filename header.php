@@ -35,53 +35,38 @@ wp_title( '|', true, 'right' ); }?>
 
 
 <div id="main">
-
-   <?php if(is_front_page()) { ?>
-      <h1 class="logo">
-        <a href="<?php bloginfo('url'); ?>">Optima Engineering</a> 
-      </h1>
-    <?php } else { ?>
-      <div class="logo">
-        <a href="<?php bloginfo('url'); ?>">Optima Engineering</a> 
-      </div>
-    <?php } ?>
-    
-    
-    
-<div id="header-right">
-  <div id="header-right-top">
-    <div id="topbar">
-      
-      <ul>
-        <li><a href="<?php bloginfo('url'); ?>/news-press-optima">What's New</a></li>
-        <li><a href="<?php bloginfo('url'); ?>/about/optima-engineering-careers/">Careers</a></li>
-        <li><a href="<?php bloginfo('url'); ?>/contact-optima">Contact Us</a></li>
-      </ul>
-
-      <div id="search">
-        <form id="searchform" method="get" action="<?php echo home_url( '/' ); ?>">
-          <div>
-            <input type="text" name="s" id="searchinput" size="15" class="topsearch" value="Search Site" onfocus="if(this.value == 'Search Site'){this.value = '';}" />
-            <br />
+  <div id="masthead">
+    <div class="wrapper">
+      <div class="col-1">
+        <?php if(is_front_page()) { ?>
+          <h1 class="logo">
+            <a href="<?php bloginfo('url'); ?>"><img src="<?php echo get_template_directory_uri()."/images/logo.jpg";?>" alt="Optima Engineering"></a> 
+          </h1>
+        <?php } else { ?>
+          <div class="logo">
+            <a href="<?php bloginfo('url'); ?>"><img src="<?php echo get_template_directory_uri()."/images/logo.jpg";?>" alt="Optima Engineering"></a> 
           </div>
-        </form>
-      </div><!-- search -->
+        <?php } ?>
+      </div><!--.col-1-->
+      <div class="col-2">
+        <div id="header-right-top">
+          <div id="topbar">
+            <ul>
+              <li><a href="<?php bloginfo('url'); ?>/news-press-optima">What's New</a></li>
+              <li><a href="<?php bloginfo('url'); ?>/about/optima-engineering-careers/">Careers</a></li>
+              <li><a href="<?php bloginfo('url'); ?>/contact-optima">Contact Us</a></li>
+              <li><a href="https://twitter.com/OptimaEngineer" target="_blank"><i class="fa fa-twitter"></i></a></li>
+            </ul>
+          </div><!-- #top bar -->
+        </div><!-- #header-right-top -->
 
-    <div class="twitter">
-      <a href="https://twitter.com/OptimaEngineer" target="_blank">Follow Optima on Twitter</a>
-    </div><!-- twitter -->
-
-    </div><!-- #top bar -->
-  </div><!-- #header rightj top -->
-</div><!-- #header-right -->
-
-  <nav id="site-navigation" class="main-navigation" role="navigation">
-    <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'MENU', 'acstarter' ); ?></button>
-    <?php wp_nav_menu( array( 'theme_location' => 'header-menu','menu_id' => 'primary-menu'  ) ); ?>
-  </nav><!-- #navigation -->
-     
-<div class="clear"></div>
-    
+        <nav id="site-navigation" class="main-navigation" role="navigation">
+          <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'MENU', 'acstarter' ); ?></button>
+          <?php wp_nav_menu( array( 'theme_location' => 'header-menu','menu_id' => 'primary-menu'  ) ); ?>
+        </nav><!-- #navigation -->
+      </div><!--.col-2-->
+    </div><!--.wrapper-->
+  </div><!--#masthead-->
     
     
     

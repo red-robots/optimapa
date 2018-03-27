@@ -2,9 +2,8 @@
 /* Home Page  */
 #homepage-content {
 	width: 100%;
-	float: left;
-	
 	font-size:14px;
+	
 	@media screen and (min-width: $tabwidth) {
 			
 	}
@@ -16,7 +15,6 @@
 }
 .home-right {
 	width: 100%;
-	float: left;
 	@media screen and (min-width: $tabwidth) {
 			
 	}
@@ -26,7 +24,6 @@
 }
 .home-row {
 	width: 100%;
-	float: left;
 	margin-top: 5px;
 	@media screen and (min-width: $tabwidth) {
 			
@@ -37,7 +34,6 @@
 }
 #info-box {
 	width: 100%;
-	float:left;
 	display: block;
 	background-color:#908883;
 	margin-top: 5px;
@@ -1948,6 +1944,35 @@ ul.thumbs img {
 				padding: 10px 25px;
 				&:hover {
 					background-color: $color-optima-grey;
+				}
+			}
+		}
+	}
+}
+
+.template-index {
+	>.row-1 {
+		background-position: center;
+		background-size: cover;
+		>.wrapper {
+			padding: 8% 0 16% 0;
+			>.inner-wrapper {
+				@media screen and (min-width: $deskwidth) {
+					width: 50%;
+				}
+				header {
+					h1 {
+						color: white;
+						font-size: 40px;
+						text-transform: uppercase;
+						font-weight: 700;
+						text-shadow: 2px 2px 5px black;
+					}
+				}
+				.copy {
+					color: white;
+					font-weight: 700;
+					font-size: 18px;
 				}
 			}
 		}
