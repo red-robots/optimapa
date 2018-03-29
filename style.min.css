@@ -1170,8 +1170,46 @@ ul.thumbs img{border:0;display:block}
 .template-index>.row-1{background-position:center;background-size:cover}
 .template-index>.row-1>.wrapper{padding:8% 0 16% 0}
 @media screen and (min-width:1200px){.template-index>.row-1>.wrapper>.inner-wrapper{width:50%}
-}.template-index>.row-1>.wrapper>.inner-wrapper header h1{color:white;font-size:40px;text-transform:uppercase;font-weight:700;text-shadow:2px 2px 5px black}
-.template-index>.row-1>.wrapper>.inner-wrapper .copy{color:white;font-weight:700;font-size:18px}
+}.template-index>.row-1>.wrapper>.inner-wrapper header h1{color:white;font-size:30px;text-transform:uppercase;font-weight:700;text-shadow:2px 2px 5px black}
+@media screen and (min-width:600px){.template-index>.row-1>.wrapper>.inner-wrapper header h1{font-size:40px}
+}.template-index>.row-1>.wrapper>.inner-wrapper .copy{color:white;font-weight:700;font-size:18px}
+.template-index>.row-2>.wrapper{padding:40px 0}
+@media screen and (min-width:600px){.template-index>.row-2>.wrapper{padding:3% 0}
+}.template-index>.row-2>.wrapper>header.row-1{text-align:center;margin:0 0 2% 0}
+.template-index>.row-2>.wrapper>header.row-1 h2{margin:0;font-size:25px;font-weight:700;text-transform:uppercase}
+@media screen and (min-width:600px){.template-index>.row-2>.wrapper>header.row-1 h2{font-size:35px}
+}.template-index>.row-2>.wrapper>header.row-1 .spacer{margin:5px auto 0 auto;border-bottom:3px solid #404040;width:50px}
+.template-index>.row-2>.wrapper>.row-2 .box{padding:20px;margin:40px 0 0 0;background-position:center;background-size:cover;text-align:center}
+@media screen and (min-width:600px){.template-index>.row-2>.wrapper>.row-2 .box{width:48%;margin:4% 2% 0 2%;padding:40px;float:left;min-height:250px;display:-webkit-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-justify-content:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:stretch;-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch;-webkit-align-content:stretch;-ms-flex-line-pack:stretch;align-content:stretch;-webkit-flex-direction:column;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
+}@media screen and (min-width:600px){.template-index>.row-2>.wrapper>.row-2 .box:nth-child(even){margin-right:0}
+}@media screen and (min-width:1200px){.template-index>.row-2>.wrapper>.row-2 .box:nth-child(even){margin:4% 2% 0 2%}
+}@media screen and (min-width:600px){.template-index>.row-2>.wrapper>.row-2 .box:nth-child(odd){margin-left:0}
+}@media screen and (min-width:1200px){.template-index>.row-2>.wrapper>.row-2 .box:nth-child(odd){margin:4% 2% 0 2%}
+}@media screen and (min-width:1200px){.template-index>.row-2>.wrapper>.row-2 .box{width:22%;margin:4% 2% 0 2%}
+}@media screen and (min-width:1200px){.template-index>.row-2>.wrapper>.row-2 .box.first{margin-left:0}
+}@media screen and (min-width:1200px){.template-index>.row-2>.wrapper>.row-2 .box.last{margin-right:0}
+}@media screen and (min-width:600px){.template-index>.row-2>.wrapper>.row-2 .box:hover a.button{height:unset;opacity:1;padding:10px;margin:15px 0 0 0;line-height:1}
+}.template-index>.row-2>.wrapper>.row-2 .box .font-awesome{color:white;font-size:50px}
+.template-index>.row-2>.wrapper>.row-2 .box header{margin:15px 0 0 0}
+.template-index>.row-2>.wrapper>.row-2 .box header h3{color:white;margin:0;font-weight:700;text-transform:uppercase;font-size:16px}
+.template-index>.row-2>.wrapper>.row-2 .box a.button{background-color:limegreen;color:white;padding:15px;margin:15px 0 0 0;line-height:1;text-transform:uppercase;font-size:14px;display:block}
+@media screen and (min-width:600px){.template-index>.row-2>.wrapper>.row-2 .box a.button{opacity:0;padding:0;margin:0;height:0;line-height:0;-webkit-transition:.5s all;transition:.5s all}
+}.template-index>.row-3{background-color:lightgrey}
+.template-index>.row-3>.wrapper{padding:40px 0}
+@media screen and (min-width:600px){.template-index>.row-3>.wrapper{padding:3% 0 4.5% 0}
+}.template-index>.row-3>.wrapper>header.row-1{text-align:center;margin:0 0 2% 0}
+.template-index>.row-3>.wrapper>header.row-1 h2{margin:0;font-weight:700;font-size:25px;text-transform:uppercase}
+@media screen and (min-width:600px){.template-index>.row-3>.wrapper>header.row-1 h2{font-size:35px}
+}.template-index>.row-3>.wrapper>header.row-1 .spacer{margin:5px auto 0 auto;border-bottom:3px solid #404040;width:50px}
+.template-index>.row-3>.wrapper>.row-2 .box{margin:40px 0 0 0;background-position:center;background-size:cover;text-align:center;border-bottom:5px solid grey;background-color:white}
+@media screen and (min-width:1200px){.template-index>.row-3>.wrapper>.row-2 .box{width:28.66667%;margin:3.5% 3.5% 0 3.5%;float:left;display:-webkit-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-justify-content:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:stretch;-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch;-webkit-align-content:stretch;-ms-flex-line-pack:stretch;align-content:stretch;-webkit-flex-direction:column;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
+}@media screen and (min-width:1200px){.template-index>.row-3>.wrapper>.row-2 .box.first{margin-left:0}
+}@media screen and (min-width:1200px){.template-index>.row-3>.wrapper>.row-2 .box.last{margin-right:0}
+}.template-index>.row-3>.wrapper>.row-2 .box img{width:100%;display:block}
+.template-index>.row-3>.wrapper>.row-2 .box header{padding:30px 20px 10px 20px;text-align:left}
+.template-index>.row-3>.wrapper>.row-2 .box header h3{margin:0;font-weight:700;text-transform:uppercase;font-size:16px}
+.template-index>.row-3>.wrapper>.row-2 .box>.inner-wrapper{padding:10px 20px 30px 20px;margin:auto 0 0 0}
+.template-index>.row-3>.wrapper>.row-2 .box>.inner-wrapper a.button{background-color:limegreen;color:white;font-size:14px;text-transform:uppercase;padding:15px 40px;line-height:1;display:inline-block}
 .blog .format-aside .entry-title,.archive .format-aside .entry-title{display:none}
 ol.commentlist{list-style:none;margin:0;padding:0}
 ol.commentlist li{border:1px solid #d5d5d5;margin:0 0 10px;padding:5px 7px 5px 64px;position:relative;list-style-type:none}

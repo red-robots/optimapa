@@ -24,21 +24,23 @@
             <?php endif;?>
             <div class="row-2">    
                 <div class="wrapper">
-                    <?php $row_2_title = get_field("row_2_title");
+                    <?php $row_2_title = get_field("row_2_title",2103);
                     if($row_2_title):?>
                         <header class="row-1">
                             <h2><?php echo $row_2_title;?></h2>
+                            <div class="spacer"></div>
                         </header>       
                     <?php endif; ?>     
                     <?php $terms = get_terms(array('taxonomy'=>'categories', 'hide_empty'=>false));
                     if(!is_wp_error($terms)&&is_array($terms)&&!empty($terms)):?>
-                        <div class="row-2">
+                        <div class="row-2 clear-bottom">
                             <?php $read_more_text = get_field("read_more_text","option");
+                            $i = 0;
                             foreach($terms as $term):?>
                                 <?php $image = get_field("featured_image", $term);
                                 $fa_text = get_field("font_awesome",$term);
                                 if($image):?>
-                                    <div class="box" <?php echo 'style="background-image: url('.$image.');"';?>>
+                                    <div class="box js-blocks <?php if($i%4===0) echo "first";?> <?php if(($i+1)%4===0) echo "last";?>" <?php echo 'style="background-image: url('.$image.');"';?>>
                                         <?php if($fa_text):?>
                                             <div class="font-awesome">
                                                 <i class="<?php echo $fa_text;?>"></i>
@@ -51,70 +53,54 @@
                                             <?php echo $read_more_text;?>
                                         </a>
                                     </div><!--.box-->
-                                <?php endif;?>
+                                    <?php $i++;
+                                endif;?>
                             <?php endforeach;?>
                         </div><!--.row-2-->
                     <?php endif;?>
                 </div><!--.wrapper-->
             </div><!--.row-2-->
-
-            <div id="home-bot-left">
-            <?php
-            $wp_query = new WP_Query();
-            $wp_query->query(array(
-                'post_type'=>'page',
-                'page_id' => '136',
-                'posts_per_page' => 1,
-            ));
-            while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
-            <?php //bloginfo('description'); ?>
-
-            <?php the_excerpt(); ?>
-            <a href="<?php the_permalink(); ?>">More</a>
-            <!--<p>Optima Engineering is an experienced, multi-disciplined, professional firm specializing in mechanical, electrical, plumbing and fire protection engineering, with offices in Charlotte, NC (LEED Platinum) and Raleigh, NC.  Our firm’s industry-leading expertise includes BIM IPD (Revit and Navisworks), lighting systems technology design, mission critical CFD analysis, building commissioning, code compliance, energy modeling and energy management. </p>
-            
-            <p>We aren’t your typical, introverted, pocket-protected engineering firm.  We have a dynamic, young, talented staff that emphasizes thorough and frequent communication with our clients, high-quality design work, accurate budget projections and careful schedule tracking.  We take pride in our position as a reliable, knowledgeable source for creative and sustainable building design solutions.</p>-->
-            <?php endwhile;   ?>
-            <?php  wp_reset_postdata(); ?>
-            
-            
-
-            </div><!-- / home bot leftr -->
-
-
-
-            <div id="home-bot-right">
-            <h2>What's New </h2>
-            <div class="clear"></div>
-            <?php query_posts( 'posts_per_page=2&category_name=whats-new' ); ?>
-            <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-
-
-
-                    
-                    <div class="dateh-home">
-                        <?php the_time('F j, Y'); ?>
-                            <div class="read-event"><a href="<?php the_permalink(); ?>">Read &raquo;</a></div>
-                            </div>
-                
-                    
-            <h2 class="other-title-home"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-
-
-
-
-
-            <div class="clear"></div>
-
-
-
-
-
-            <?php endwhile; endif;  ?>
-            <?php  wp_reset_query(); ?> 
-            <?php rewind_posts(); ?>
-            <a href="<?php bloginfo('ulr'); ?>/news-press-optima">See More</a>
-            </div><!-- / home bot right -->
+            <div class="row-3">    
+                <div class="wrapper">
+                    <?php $row_3_title = get_field("row_3_title",2103);
+                    if($row_3_title):?>
+                        <header class="row-1">
+                            <h2><?php echo $row_3_title;?></h2>
+                            <div class="spacer"></div>
+                        </header>       
+                    <?php endif; ?>     
+                    <?php $args = array(
+                        'post_type'=>'post',
+                        'posts_per_page'=>3,
+                        'orderby'=>'date',
+                        'order'=>'DESC'
+                    );
+                    $query = new WP_Query($args);
+                    if($query->have_posts()):?>
+                        <div class="row-2 clear-bottom">
+                            <?php $read_more_text = get_field("read_more_text","option");
+                            $i = 0;
+                            while($query->have_posts()): $query->the_post();?>
+                                <div class="box js-blocks <?php if($i%3===0) echo "first";?> <?php if(($i+1)%3===0) echo "last";?>">
+                                    <?php if(has_post_thumbnail()):?>
+                                        <?php the_post_thumbnail('medium');?>
+                                    <?php endif;?>
+                                    <header>
+                                        <h3><?php the_title();?></h3>
+                                    </header>
+                                    <div class="inner-wrapper">
+                                        <a href="<?php echo get_permalink();?>" class="button">
+                                            <?php echo $read_more_text;?>
+                                        </a>
+                                    </div><!--.wrapper-->
+                                </div><!--.box-->
+                                <?php $i++;?>
+                            <?php endwhile;?>
+                        </div><!--.row-2-->
+                        <?php wp_reset_postdata();
+                    endif;?>
+                </div><!--.wrapper-->
+            </div><!--.row-3-->
         </article><!--.template-index-->
     </div><!--#primary-->
 <?php get_footer(); ?>
