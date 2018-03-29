@@ -596,4 +596,9 @@ function my_login_logo_url_title() {
     return 'Jack Baker Real Estate';
 }
 add_filter( 'login_headertitle', 'my_login_logo_url_title' ); 
+
+/*-------------------------------------
+	Adds Options page for ACF.
+---------------------------------------*/
+if( function_exists('acf_add_options_page') ) {acf_add_options_page();}
 ?>

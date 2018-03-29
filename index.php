@@ -33,7 +33,8 @@
                     <?php $terms = get_terms(array('taxonomy'=>'categories', 'hide_empty'=>false));
                     if(!is_wp_error($terms)&&is_array($terms)&&!empty($terms)):?>
                         <div class="row-2">
-                            <?php foreach($terms as $term):?>
+                            <?php $read_more_text = get_field("read_more_text","option");
+                            foreach($terms as $term):?>
                                 <?php $image = get_field("featured_image", $term);
                                 $fa_text = get_field("font_awesome",$term);
                                 if($image):?>
@@ -46,6 +47,9 @@
                                         <header>
                                             <h3><?php echo $term->name;?></h3>
                                         </header>
+                                        <a href="<?php echo get_term_link($term->term_id);?>" class="button">
+                                            <?php echo $read_more_text;?>
+                                        </a>
                                     </div><!--.box-->
                                 <?php endif;?>
                             <?php endforeach;?>
