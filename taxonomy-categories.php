@@ -28,26 +28,6 @@ if (has_term('k-12-education','categories')) {$projDetails = "pro-det-k-12"; $re
     
 </div><!-- project details -->
 
-     
-
-     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
  <div id="page-right">
   
      <?php
@@ -60,10 +40,6 @@ $wp_query->query(array(
 	'paged' => $paged,
 	'posts_per_page' => 10,
 ));
-
-
-      
-       
 
 while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
 

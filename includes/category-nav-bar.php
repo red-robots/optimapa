@@ -1,12 +1,23 @@
-<div id="subnav">
-    <ul>
-    	<li class="k-12"><a href="<?php bloginfo('url'); ?>/project-categories/k-12-education" class="<?php if (has_term('k-12-education','categories')) {echo "subactive";}?>">K-12 Education</a></li>
-        <li class="higher"><a href="<?php bloginfo('url'); ?>/project-categories/higher-ed" class="<?php if (has_term('higher-ed','categories')) {echo "subactive";}?>">Higher Education</a></li>
-        <li class="health"><a href="<?php bloginfo('url'); ?>/project-categories/healthcare" class="<?php if (has_term('healthcare','categories')) {echo "subactive";}?>">Healthcare</a></li>
-        <li class="mission"><a href="<?php bloginfo('url'); ?>/project-categories/mission-critical" class="<?php if (has_term('mission-critical','categories')) {echo "subactive";}?>">Mission Critical</a></li>
-        <li class="comm"><a href="<?php bloginfo('url'); ?>/project-categories/commercial" class="<?php if (has_term('commercial','categories')) {echo "subactive";}?>">Commercial</a></li>
-        <li class="multi"><a href="<?php bloginfo('url'); ?>/project-categories/multi-family-mixed-use" class="<?php if (has_term('multi-family-mixed-use','categories')) {echo "subactive";}?>">Multi Family/Mixed Use</a></li>
-        <li class="gov"><a href="<?php bloginfo('url'); ?>/project-categories/government" class="<?php if (has_term('government','categories')) {echo "subactive";}?>">Government</a></li>
-        <li class="mo"><a href="<?php bloginfo('url'); ?>/project-categories/more-engineering-projects" class="<?php if (has_term('more-engineering-projects','categories')) {echo "subactive";}?>">More</a></li>
-    </ul>
-</div><!-- subnav -->
+<?php $terms = get_terms(array('taxonomy'=>'categories', 'hide_empty'=>false));
+if(!is_wp_error($terms)&&is_array($terms)&&!empty($terms)):?>
+    <div id="subnav" class="clear-bottom">
+        <?php $read_more_text = get_field("read_more_text","option");
+        $i = 0;
+        foreach($terms as $term):?>
+            <?php $fa_text = get_field("font_awesome",$term);?>
+            <div class="box js-blocks <?php if($i%4===0) echo "first";?> <?php if(($i+1)%4===0) echo "last";?>">
+                <a href="<?php echo get_term_link($term->term_id);?>">
+                    <?php if($fa_text):?>
+                        <div class="font-awesome">
+                            <i class="<?php echo $fa_text;?>"></i>
+                        </div><!--.font-awesome-->
+                    <?php endif;?>
+                    <header>
+                        <h3><?php echo $term->name;?></h3>
+                    </header>
+                </a>
+            </div><!--.box-->
+            <?php $i++;?>
+        <?php endforeach;?>
+    </div><!--#subnav-->
+<?php endif;?>
