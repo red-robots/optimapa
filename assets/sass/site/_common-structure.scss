@@ -96,10 +96,123 @@ body {
 	}
 }
 #footer {
-	width: 100%;
-	background-color:#7C7570;
-	font-size: 16px;
-	color: #FFF;
+	background-color: $color-optima-dark-grey;
+	>.wrapper {
+		padding: 40px 0;
+		text-align: left;
+		@media screen and (min-width: $tabwidth) {
+			padding: 40px 0 4% 0;
+		}
+		>header {
+			h2 {
+				color: white;
+				margin: 0;
+				text-transform: uppercase;
+				font-size: 25px;
+				@media screen and (min-width: $tabwidth) {
+					font-size: 30px;
+				}
+			}
+		}
+		>.row-2 {
+			@media screen and (min-width: $deskwidth) {
+				margin: 10px 0 0 0;
+			}
+			>.col {
+				color: white;
+				margin: 30px 0 0 0;
+				font-size: 14px;
+				line-height: 1.2;
+				@media screen and (min-width: $tabwidth) {
+					width: 1/2*93%;
+					margin: 30px 3.5% 0 3.5%;
+					float: left;
+				}
+				@media screen and (min-width: $deskwidth) {
+					width: 1/4*79%;
+					margin: 0 3.5%;
+				}
+				&:nth-child(even){
+					@media screen and (min-width: $tabwidth) {
+						margin-right: 0;
+					}
+					@media screen and (min-width: $deskwidth) {
+						margin: 0 3.5%;
+					}
+				}
+				&:nth-child(odd){
+					@media screen and (min-width: $tabwidth) {
+						margin-left: 0;
+					}
+					@media screen and (min-width: $deskwidth) {
+						margin: 0 3.5%;
+					}
+				}
+				&.first {
+					@media screen and (min-width: $deskwidth) {
+						margin-left: 0;
+					}
+				}
+				&.last {
+					@media screen and (min-width: $deskwidth) {
+						margin-right: 0;
+					}
+				}
+				header {
+					h3 {
+						font-weight: 700;
+						font-size: 16px;
+					}
+				}
+				.line-1 {
+
+				}
+				.line-2 {
+
+				}
+				.phone {
+					margin: 20px 0 0 0;
+				}
+				.email {
+
+				}
+				.copyright {
+
+				}
+				.sitemap {
+					a {
+						color: white;
+					}
+				}
+			}
+			>.col-4 {
+				form {
+					input[type=text] {
+						background-color: $color-optima-medium-grey;
+						border: 2px solid $color-optima-light-grey;
+						font-size: 14px;
+						padding: 6px;
+						line-height: 1;
+						float: left;
+						border-radius: 0;
+						width: calc(100% - 82px);
+					}
+					input[type=submit] {
+						padding: 8px 10px;
+						font-size: 14px;
+						float: left;
+						font-weight: 700;
+						line-height: 1;
+						border-radius: 0;
+						box-shadow: none;
+						text-shadow: none;
+						text-transform: uppercase;
+						color: white;
+					}
+				}
+			}
+		}
+	}
 }
 
 .aboutcol1 {

@@ -1,20 +1,95 @@
 
 </div> <!-- main -->
-<div class="clear"></div>
 
 
 
 <div id="footer">
-<div id="footer-cont">
-Charlotte: 1927 South Tryon Street Suite 300 | Charlotte, NC 28203 | 704.338.1292 <br>
-<!--Raleigh: 333 Fayetteville Street Suite 311 | Raleigh, NC 27601 | 919.856.4461-->
-150 Fayetteville Street Suite 520, Raleigh, NC 27601 | 919.926.2200  <br>
-  
- 
- Optima Engineering &copy; <?php echo date('Y'); ?> | <?php echo do_shortcode('[email-obfuscate email="info@optimaengineering.com"]'); ?> | <a href="<?php bloginfo('url'); ?>/site-map">site map</a>
- 
- 
-</div><!-- footer cont -->
+  <div class="wrapper">
+    <?php $footer_title = get_field("footer_title","option");
+    $charlotte_office_title = get_field("charlotte_office_title","option");
+    $charlotte_office_line_1 = get_field("charlotte_office_line_1","option");
+    $charlotte_office_line_2 = get_field("charlotte_office_line_2","option");
+    $charlotte_office_phone = get_field("charlotte_office_phone","option");
+    $raleigh_office_title = get_field("raleigh_office_title","option");
+    $raleigh_office_line_1 = get_field("raleigh_office_line_1","option");
+    $raleigh_office_line_2 = get_field("raleigh_office_line_2","option");
+    $raleigh_office_phone = get_field("raleigh_office_phone","option");
+    $email = get_field("email","option");
+    $copyright = get_field("copyright","option");
+    $sitemap_text = get_field("sitemap_text","option");
+    $sitemap_link = get_field("sitemap_link","option");?>
+    <header class="row-1">
+      <h2><?php echo $footer_title;?></h2>
+    </header>
+    <div class="row-2 clear-bottom">
+      <div class="col-1 col first">
+        <?php if($charlotte_office_title):?>
+          <header>
+            <h3><?php echo $charlotte_office_title;?></h3>
+          </header>
+        <?php endif;
+        if($charlotte_office_line_1):?>
+          <div class="line-1">
+            <?php echo $charlotte_office_line_1;?>
+          </div><!--.line-1-->
+        <?php endif;
+        if($charlotte_office_line_2):?>
+          <div class="line-2">
+            <?php echo $charlotte_office_line_2;?>
+          </div><!--.line-2-->
+        <?php endif;
+        if($charlotte_office_phone):?>
+          <div class="phone">
+            <?php echo $charlotte_office_phone;?>
+          </div><!--.phone-->
+        <?php endif;?>
+      </div><!--.col-1-->
+      <div class="col-2 col">
+        <?php if($raleigh_office_title):?>
+          <header>
+            <h3><?php echo $raleigh_office_title;?></h3>
+          </header>
+        <?php endif;
+        if($raleigh_office_line_1):?>
+          <div class="line-1">
+            <?php echo $raleigh_office_line_1;?>
+          </div><!--.line-1-->
+        <?php endif;
+        if($raleigh_office_line_2):?>
+          <div class="line-2">
+            <?php echo $raleigh_office_line_2;?>
+          </div><!--.line-2-->
+        <?php endif;
+        if($raleigh_office_phone):?>
+          <div class="phone">
+            <?php echo $raleigh_office_phone;?>
+          </div><!--.phone-->
+        <?php endif;?>
+      </div><!--.col-2-->
+      <div class="col-3 col">
+        <?php if($email):?>
+          <div class="email">
+            <?php echo do_shortcode('[email-obfuscate email="'.$email.'"]'); ?>
+          </div><!--.email-->
+        <?php endif;
+        if($copyright):?>
+          <div class="copyright">
+            <?php echo $copyright;?>
+          </div><!--.copyright-->
+        <?php endif;
+        if($sitemap_link&&$sitemap_text):?>
+          <div class="sitemap">
+            <a href="<?php echo $sitemap_link;?>">
+              <?php echo $sitemap_text;?>
+            </a>
+          </div><!--.phone-->
+        <?php endif;?>
+      </div><!--.col-3-->
+      <div class="col-4 col last clear-bottom">
+        <?php echo get_search_form();?>
+      </div><!--.col-4-->
+    </div><!--.row-2-->
+  </div><!--.wrapper-->
 </div><!-- footer -->
 
 <script>

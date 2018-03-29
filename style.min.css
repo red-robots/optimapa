@@ -738,7 +738,26 @@ body{margin:0;font-family:'Raleway',sans-serif;font-weight:300}
 @media screen and (min-width:600px){.logo-25,h1.logo-25{float:left;margin:0}
 }@media screen and (min-width:1200px){.logo-25,h1.logo-25{margin:45px 0 0 20px}
 }.logo-25 a,h1.logo-25 a{width:200px;height:174px;display:block;text-indent:-9000px}
-#footer{width:100%;background-color:#7c7570;font-size:16px;color:#FFF}
+#footer{background-color:grey}
+#footer>.wrapper{padding:40px 0;text-align:left}
+@media screen and (min-width:600px){#footer>.wrapper{padding:40px 0 4% 0}
+}#footer>.wrapper>header h2{color:white;margin:0;text-transform:uppercase;font-size:25px}
+@media screen and (min-width:600px){#footer>.wrapper>header h2{font-size:30px}
+}@media screen and (min-width:1200px){#footer>.wrapper>.row-2{margin:10px 0 0 0}
+}#footer>.wrapper>.row-2>.col{color:white;margin:30px 0 0 0;font-size:14px;line-height:1.2}
+@media screen and (min-width:600px){#footer>.wrapper>.row-2>.col{width:46.5%;margin:30px 3.5% 0 3.5%;float:left}
+}@media screen and (min-width:1200px){#footer>.wrapper>.row-2>.col{width:19.75%;margin:0 3.5%}
+}@media screen and (min-width:600px){#footer>.wrapper>.row-2>.col:nth-child(even){margin-right:0}
+}@media screen and (min-width:1200px){#footer>.wrapper>.row-2>.col:nth-child(even){margin:0 3.5%}
+}@media screen and (min-width:600px){#footer>.wrapper>.row-2>.col:nth-child(odd){margin-left:0}
+}@media screen and (min-width:1200px){#footer>.wrapper>.row-2>.col:nth-child(odd){margin:0 3.5%}
+}@media screen and (min-width:1200px){#footer>.wrapper>.row-2>.col.first{margin-left:0}
+}@media screen and (min-width:1200px){#footer>.wrapper>.row-2>.col.last{margin-right:0}
+}#footer>.wrapper>.row-2>.col header h3{font-weight:700;font-size:16px}
+#footer>.wrapper>.row-2>.col .phone{margin:20px 0 0 0}
+#footer>.wrapper>.row-2>.col .sitemap a{color:white}
+#footer>.wrapper>.row-2>.col-4 form input[type=text]{background-color:grey;border:2px solid lightgrey;font-size:14px;padding:6px;line-height:1;float:left;border-radius:0;width:calc(100% - 82px)}
+#footer>.wrapper>.row-2>.col-4 form input[type=submit]{padding:8px 10px;font-size:14px;float:left;font-weight:700;line-height:1;border-radius:0;box-shadow:none;text-shadow:none;text-transform:uppercase;color:white}
 .aboutcol1{width:100%}
 @media screen and (min-width:1200px){.aboutcol1{width:500px}
 }.sitemap-column{float:left;margin-right:30px}
