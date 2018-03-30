@@ -829,6 +829,18 @@ img{max-width:100%}
 #masthead>.wrapper>.col-2 nav#site-navigation>div ul li:first-child{margin-top:0}
 #masthead>.wrapper>.col-2 nav#site-navigation>div ul li a{font-size:18px;display:block;font-weight:500;text-transform:uppercase;color:black}
 #masthead>.wrapper>.col-2 nav#site-navigation>div ul li ul.sub-menu{display:none}
+#subnav{background-color:lightgrey}
+@media screen and (min-width:1200px){#subnav{display:-webkit-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-justify-content:space-between;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-align-content:stretch;-ms-flex-line-pack:stretch;align-content:stretch;-webkit-align-items:stretch;-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch}
+}#subnav .box{background-color:lightgrey;text-align:center}
+@media screen and (min-width:1200px){#subnav .box{padding:20px 10px}
+}@media screen and (min-width:600px){#subnav .box:nth-child(even){margin-right:0}
+}@media screen and (min-width:1200px){#subnav .box:nth-child(even){margin:0}
+}@media screen and (min-width:600px){#subnav .box:nth-child(odd){margin-left:0}
+}@media screen and (min-width:1200px){#subnav .box:nth-child(odd){margin:0}
+}#subnav .box.active{background-color:white}
+@media screen and (min-width:1200px){#subnav .box.first{margin-left:0}
+}@media screen and (min-width:1200px){#subnav .box.last{margin-right:0}
+}#subnav .box a{display:block}
 #homepage-content{width:100%;font-size:14px}
 @media screen and (min-width:1200px){#homepage-content{width:1200px;height:445px;margin-left:35px}
 }.home-right{width:100%}
@@ -1021,22 +1033,6 @@ img{max-width:100%}
 .blog-square-side a{width:100%;float:left;position:relative;border:4px solid #CCC;padding:10px}
 @media screen and (min-width:1200px){.blog-square-side a{width:230px}
 }.blog-square-side a:hover{border:4px solid #999}
-#subnav{width:100%;margin:30px 0 0}
-@media screen and (min-width:600px){#subnav{margin:30px 0 20px 0}
-}@media screen and (min-width:1200px){#subnav{width:1140px;border-top:#ececec solid 6px;margin:30px 0 15px 50px}
-}#subnav ul{margin-left:0;margin-top:0;margin-bottom:0;padding-left:0}
-#subnav li{display:inline-block;margin-right:-4px}
-#subnav a{display:inline-block;padding:10px 10px 10px 10px;text-decoration:none;color:#333;font-weight:bold;font-size:12px;border-top-width:3px;border-top-style:solid;border-top-color:#ececec;margin-top:-6px}
-@media screen and (min-width:960px){#subnav a{font-size:12px;padding:10px 25px 10px 20px}
-}@media screen and (min-width:1200px){#subnav a{border-top-width:6px;font-size:14px;padding:10px 25px 10px 20px}
-}#subnav .k-12 a:hover,#subnav .k-12 a.subactive{color:#e0600a;border-top-color:#e0600a}
-#subnav .higher a:hover,#subnav .higher a.subactive{color:#65692c;border-top-color:#65692c}
-#subnav .health a:hover,#subnav .health a.subactive{color:#6a2998;border-top-color:#6a2998}
-#subnav .mission a:hover,#subnav .mission a.subactive{color:#daaa18;border-top-color:#daaa18}
-#subnav .comm a:hover,#subnav .comm a.subactive{color:#1b295a;border-top-color:#1b295a}
-#subnav .multi a:hover,#subnav .multi a.subactive{color:#990;border-top-color:#990}
-#subnav .gov a:hover,#subnav .gov a.subactive{color:#234d65;border-top-color:solid}
-#subnav .mo a:hover,#subnav .mo a.subactive{color:#7b060a;border-top-color:#7b060a}
 #proj-page-content{width:100%;float:left;font-size:16px;line-height:25px;color:#000}
 @media screen and (min-width:1200px){#proj-page-content{width:1140px;padding:25px 0 50px 50px}
 }#page-left-single-proj{width:100%;float:left}
