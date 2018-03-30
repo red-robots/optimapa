@@ -23,7 +23,7 @@ body {
 		margin-top: 0;
 	}
 }
-a.button {
+.button {
 	background: $color-optima-dark-green; /* For browsers that do not support gradients */
 	background: -webkit-linear-gradient(left, $color-optima-light-green , $color-optima-dark-green); /* For Safari 5.1 to 6.0 */
 	background: -o-linear-gradient(right, $color-optima-light-green, $color-optima-dark-green); /* For Opera 11.1 to 12.0 */
@@ -203,7 +203,7 @@ a.button {
 			>.col-4 {
 				form {
 					input[type=text] {
-						background-color: $color-optima-medium-grey;
+						background-color: $color-optima-medium-dark-grey;
 						border: 2px solid $color-optima-light-grey;
 						font-size: 14px;
 						padding: 6px;
@@ -223,6 +223,11 @@ a.button {
 						text-shadow: none;
 						text-transform: uppercase;
 						color: white;
+						background: $color-optima-dark-green; /* For browsers that do not support gradients */
+						background: -webkit-linear-gradient(left, $color-optima-light-green , $color-optima-dark-green); /* For Safari 5.1 to 6.0 */
+						background: -o-linear-gradient(right, $color-optima-light-green, $color-optima-dark-green); /* For Opera 11.1 to 12.0 */
+						background: -moz-linear-gradient(right, $color-optima-light-green, $color-optima-dark-green); /* For Firefox 3.6 to 15 */
+						background: linear-gradient(to right, $color-optima-light-green, $color-optima-dark-green); /* Standard syntax */
 					}
 				}
 			}
