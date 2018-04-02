@@ -12,7 +12,7 @@ get_header(); ?>
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 
-<div id="page-content">
+<div id="page-content" class="wrapper">
 
 
 
@@ -51,7 +51,7 @@ get_header(); ?>
         'post_status'  => 'publish' 
 );
 ?>
-<div class="cust-tax-list">
+<div class="cust-tax-list clear-bottom">
 <?php 	
 wp_list_pages( $listem );
 	?>

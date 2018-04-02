@@ -205,16 +205,18 @@ body {
 					input[type=text] {
 						background-color: $color-optima-medium-dark-grey;
 						border: 2px solid $color-optima-light-grey;
-						font-size: 14px;
-						padding: 6px;
+						font-size: 13px;
+						padding: 5px;
 						line-height: 1;
 						float: left;
 						border-radius: 0;
+						color: white;
 						width: calc(100% - 82px);
 					}
 					input[type=submit] {
 						padding: 8px 10px;
-						font-size: 14px;
+						font-size: 16px;
+						border: none;
 						float: left;
 						font-weight: 700;
 						line-height: 1;

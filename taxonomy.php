@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 
-<div id="page-content">
+<div id="page-content" class="wrapper">
 <div id="page-tax">
    <?php  // set the id and slug of the queried term
 	
@@ -36,7 +36,7 @@
 		  'use_desc_for_title' => 'false',
 );
 ?>
-<div class="cust-tax-list">
+<div class="cust-tax-list clear-bottom">
 <?php 	
 wp_list_categories( $listem );
 	?>

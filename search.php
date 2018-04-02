@@ -3,7 +3,7 @@
 
 
 
-<div id="page-content">
+<div id="page-content" class="wrapper">
 
 
 <div id="page-left">

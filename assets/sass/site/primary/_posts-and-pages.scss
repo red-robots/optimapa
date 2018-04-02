@@ -362,6 +362,7 @@
 	width: 100%;
 	@media screen and (min-width: $tabwidth) {
 		width: 60%;
+		float: left;
 	}
 	@media screen and (min-width: $deskwidth) {
 		width: 600px;
@@ -380,6 +381,7 @@
 	}
 }
 .address {
+	float: left;
 	width: 100%;	
 	font-size: 14px;
 	line-height: 16px;
@@ -412,6 +414,7 @@
 	margin-top: 40px;
 	@media screen and (min-width: $tabwidth) {
 		width: 30%;
+		float: left;
 	}
 	@media screen and (min-width: $deskwidth) {
 		width: 500px;

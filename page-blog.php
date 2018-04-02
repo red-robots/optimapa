@@ -9,7 +9,7 @@ get_header(); ?>
 
 
 
-<div id="page-content">
+<div id="page-content" class="wrapper">
 
 <h1>What's New</h1>
 
