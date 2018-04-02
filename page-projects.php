@@ -8,13 +8,7 @@
 
 
 
-<div class="page-content">
- 
-
-
-
-
-
+<div id="page-content" class="clear-bottom wrapper">
 
 <!--
 ##########################################
@@ -25,7 +19,7 @@
 -->
 
 
- <div class="project-box">
+ <div class="project-box js-blocks">
 <div class="proj-box-title pro-det-k-12"><h2 class="title-k-12">K-12 Education Projects</h2></div>
 <div class="project-box-contents">
 <?php
@@ -68,7 +62,7 @@ while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
  
  
  
-  <div class="project-box">
+  <div class="project-box js-blocks">
 <div class="proj-box-title pro-det-higher"><h2 class="title-higher">Higher Ed Projects</h2></div>
 <div class="project-box-contents">
 <?php
@@ -109,7 +103,7 @@ while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
  
  
  
-  <div class="project-box">
+  <div class="project-box js-blocks">
 <div class="proj-box-title pro-det-health"><h2 class="title-health">Healthcare Projects</h2></div>
 <div class="project-box-contents">
 <?php
@@ -151,7 +145,7 @@ while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
  
  
  
-  <div class="project-box">
+  <div class="project-box js-blocks">
 <div class="proj-box-title pro-det-mission"><h2 class="title-mission">Mission Critical Projects</h2></div>
 <div class="project-box-contents">
 <?php
@@ -193,7 +187,7 @@ while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
  
  
  
-   <div class="project-box">
+   <div class="project-box js-blocks">
 <div class="proj-box-title pro-det-comm"><h2 class="title-comm">Commercial Projects</h2></div>
 <div class="project-box-contents">
 <?php
@@ -235,7 +229,7 @@ while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
  
  
  
-   <div class="project-box">
+   <div class="project-box js-blocks">
 <div class="proj-box-title pro-det-multi"><h2 class="title-multi">Multi-Family/Mixed Use Projects</h2></div>
 <div class="project-box-contents">
 <?php
@@ -276,7 +270,7 @@ while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
  
  
  
-   <div class="project-box">
+   <div class="project-box js-blocks">
 <div class="proj-box-title pro-det-gov"><h2 class="title-gov">Government Projects</h2></div>
 <div class="project-box-contents">
 <?php
@@ -319,7 +313,7 @@ while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
  
  
  
-   <div class="project-box">
+   <div class="project-box js-blocks">
 <div class="proj-box-title pro-det-mo"><h2 class="title-mo">More Projects</h2></div>
 <div class="project-box-contents">
 <?php
