@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 
-<div id="page-content" class="wrapper">
+<div id="page-content" class="wrapper clear-bottom">
 <div id="page-tax">
      
      

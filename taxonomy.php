@@ -2,7 +2,7 @@
 
 
 <div id="template-tax">
-<div id="page-content" class="wrapper">
+<div id="page-content" class="wrapper clear-bottom">
    <?php  // set the id and slug of the queried term
 	
 		$id = $wp_query->queried_object->term_id;
@@ -52,29 +52,28 @@ wp_list_categories( $listem );
 </div><!-- / page left -->
      
     <div class="clear"></div>
-    <a name="blog"></a>
-    <div class="row-3 projects-featured" >    
-        <div class="wrapper">
-            <header class="row-1">
-                <h2>Projects Featuring <?php single_cat_title( $prefix = '', $display = true ); ?></h2>
-                <div class="spacer"></div>
-            </header>       
-            <?php 
-            $current_query = $wp_query->query_vars;
-            $args = array(
-                'post_type'=>'projects',
-                'paged' => $paged,
-                'posts_per_page' => 9,
-                'orderby'=>'date',
-                'order'=>'DESC',
-                'tax_query'=>array(array(
-                    'taxonomy'=>$current_query['taxonomy'],
-                    'field'=>'slug',
-                    'terms'=>$current_query['term']
-                ))
-            );
-            $query = new WP_Query($args);
-            if($query->have_posts()):?>
+    <?php $current_query = $wp_query->query_vars;
+    $args = array(
+        'post_type'=>'projects',
+        'paged' => $paged,
+        'posts_per_page' => 9,
+        'orderby'=>'date',
+        'order'=>'DESC',
+        'tax_query'=>array(array(
+            'taxonomy'=>$current_query['taxonomy'],
+            'field'=>'slug',
+            'terms'=>$current_query['term']
+        ))
+    );
+    $query = new WP_Query($args);
+    if($query->have_posts()):?>
+        <a name="blog"></a>
+        <div class="row-3 projects-featured" >    
+            <div class="wrapper">
+                <header class="row-1">
+                    <h2>Projects Featuring <?php single_cat_title( $prefix = '', $display = true ); ?></h2>
+                    <div class="spacer"></div>
+                </header>       
                 <div class="row-2 clear-bottom">
                     <?php $read_more_text = get_field("read_more_text","option");
                     $i = 0;
@@ -95,13 +94,13 @@ wp_list_categories( $listem );
                         <?php $i++;?>
                     <?php endwhile;?>
                 </div><!--.row-2-->
-                <?php wp_reset_postdata();
-            endif;?>
-            <div class="bella-pagi">
-                <?php bellaworks_pagi_nav(); ?>
-            </div>
-        </div><!--.wrapper-->
-    </div><!--.row-3-->
+                <div class="bella-pagi">
+                    <?php bellaworks_pagi_nav(); ?>
+                </div>
+            </div><!--.wrapper-->
+        </div><!--.row-3-->
+        <?php wp_reset_postdata();
+    endif;?>
  </div><!-- / page content -->
 
 

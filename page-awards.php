@@ -11,7 +11,7 @@ get_header(); ?>
 
 
 
-<div id="page-content" class="wrapper" >
+<div id="page-content" class="wrapper clear-bottom" >
 
 <h1><?php the_title(); ?></h1>
 <div id="alpha">

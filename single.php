@@ -7,7 +7,7 @@ get_header(); ?>
 
 	
 
-<div id="page-content" class="wrapper">
+<div id="page-content" class="wrapper clear-bottom">
 
 
 

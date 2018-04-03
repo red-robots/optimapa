@@ -12,7 +12,7 @@ get_header(); ?>
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 
-<div id="page-content" class="wrapper">
+<div id="page-content" class="wrapper clear-bottom">
 
 
 
@@ -31,14 +31,14 @@ get_header(); ?>
      
      
      
-     <?php if(is_page('about-optima-engineering')) { ?>    
+     <?php if(get_the_ID()==136) { //overiew for about?>    
     <?php 
 	$listem = array(
 		  'depth'        => 0,
 	'show_date'    => '',
 	'date_format'  => get_option('date_format'),
 	'child_of'     => 93,
-	'exclude'      => '',
+	'exclude'      => '136',
 	'include'      => '',
 	'title_li'     => '',
 	'echo'         => 1,

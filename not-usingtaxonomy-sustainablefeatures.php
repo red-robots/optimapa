@@ -4,7 +4,7 @@
 <?php //if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 
-<div id="page-content" class="wrapper">
+<div id="page-content" class="wrapper clear-bottom">
 
 
 
