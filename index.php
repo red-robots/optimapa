@@ -5,7 +5,7 @@
             $row_1_title = get_field("row_1_title",2103);
             $row_1_image = get_field("row_1_image",2103);
             if($row_1_image):?>
-                <div class="row-1" <?php echo 'style="background-image: url('.$row_1_image['url'].');"';?>>
+                <div class="row-1" <?php echo 'style="background-image: url('.$row_1_image['sizes']['large'].');"';?>>
                     <div class="wrapper">
                         <div class="inner-wrapper">
                             <?php if($row_1_title):?>
@@ -22,7 +22,7 @@
                     </div><!--.wrapper-->
                 </div><!--.row-1-->
             <?php endif;?>
-            <div class="row-2" <?php echo 'style="background-image: url('.get_template_directory_uri().'/images/bg.jpg);"';?>>    
+            <div class="row-2 project-tiles" <?php echo 'style="background-image: url('.get_template_directory_uri().'/images/bg.jpg);"';?>>    
                 <div class="wrapper">
                     <?php $row_2_title = get_field("row_2_title",2103);
                     if($row_2_title):?>
@@ -40,7 +40,7 @@
                                 <?php $image = get_field("featured_image", $term);
                                 $fa_text = get_field("font_awesome",$term);
                                 if($image):?>
-                                    <div class="box js-blocks <?php if($i%4===0) echo "first";?> <?php if(($i+1)%4===0) echo "last";?>" <?php echo 'style="background-image: url('.$image.');"';?>>
+                                    <div class="box js-blocks <?php if($i%4===0) echo "first";?> <?php if(($i+1)%4===0) echo "last";?>" <?php echo 'style="background-image: url('.$image['sizes']['large'].');"';?>>
                                         <?php if($fa_text):?>
                                             <div class="font-awesome">
                                                 <i class="<?php echo $fa_text;?>"></i>
@@ -61,7 +61,7 @@
                 </div><!--.wrapper-->
             </div><!--.row-2-->
             <img class="row-between" src="<?php echo get_template_directory_uri().'/images/bg-2.jpg';?>" alt="background-2">
-            <div class="row-3" >    
+            <div class="row-3 projects-featured" >    
                 <div class="wrapper">
                     <?php $row_3_title = get_field("row_3_title",2103);
                     if($row_3_title):?>

@@ -1,8 +1,8 @@
 <?php get_header(); ?>
 
 
+<div id="template-tax">
 <div id="page-content" class="wrapper">
-<div id="page-tax">
    <?php  // set the id and slug of the queried term
 	
 		$id = $wp_query->queried_object->term_id;
@@ -51,75 +51,57 @@ wp_list_categories( $listem );
     
 </div><!-- / page left -->
      
-<div class="clear"></div>
-
-
-<?php if(is_tax($taxonomy, 'overview')) { } else { ?>
-<div class="proj-name-bar"><h3>Projects Featuring <?php single_cat_title( $prefix = '', $display = true ); ?></h2></div><!-- prod name bar -->
-<?php } ?>
-
-
-
-<a name="blog"></a>
-<?php 
-// the query
-$counter = 0;
-$current_query = $wp_query->query_vars;
-
-$wp_query = new WP_Query();
-$wp_query->query(array(
-	$current_query['taxonomy'] => $current_query['term'],
-	'paged' => $paged,
-	'posts_per_page' => 9,
-));
-
-while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
-
-
-<?php
-  $counter++;
-  if($counter == 3) {
-    $postclass = 'last-post';
-    $counter = 0;
-  } else { $postclass = 'first-post'; }
-?>
-
-<div class="blogentry-tax <?php echo $postclass; ?> js-blocks">
-<div class="readmore"><a href="<?php the_permalink(); ?>">See More &raquo;</a></div>
-<div class="blogentry-left-tax">
-       
-        
-				<?php
-                //  Display the featured image. Must be inside a loop.
-                if ( has_post_thumbnail() ) {
-                    the_post_thumbnail('thumbnail');
-                }
-                // If you do not have a Featured Image, show a thumbnail stored in the themes images folder.
-                else {
-                    echo '<img src="' . get_bloginfo( 'template_url' ) . '/images/thumb-default.png" width="75px" height="75px" />';
-                     }
-                ?>
-      
-        </div><!-- blogentry left  -->
-
-
-<div class="blogentry-right-tax">
-  <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
- <?php  //echo get_excerpt(300); ?> 
-</div><!-- blogentry right -->  
-</div><!-- blogentry -->
-
-
-<?php endwhile; /*endif;*/ wp_reset_postdata(); ?>
-
-<div class="clear"></div>
-
- <div class="bella-pagi">
-<?php bellaworks_pagi_nav(); ?>
-</div>
-
-     
-     
+    <div class="clear"></div>
+    <a name="blog"></a>
+    <div class="row-3 projects-featured" >    
+        <div class="wrapper">
+            <header class="row-1">
+                <h2>Projects Featuring <?php single_cat_title( $prefix = '', $display = true ); ?></h2>
+                <div class="spacer"></div>
+            </header>       
+            <?php 
+            $current_query = $wp_query->query_vars;
+            $args = array(
+                'post_type'=>'projects',
+                'paged' => $paged,
+                'posts_per_page' => 9,
+                'orderby'=>'date',
+                'order'=>'DESC',
+                'tax_query'=>array(array(
+                    'taxonomy'=>$current_query['taxonomy'],
+                    'field'=>'slug',
+                    'terms'=>$current_query['term']
+                ))
+            );
+            $query = new WP_Query($args);
+            if($query->have_posts()):?>
+                <div class="row-2 clear-bottom">
+                    <?php $read_more_text = get_field("read_more_text","option");
+                    $i = 0;
+                    while($query->have_posts()): $query->the_post();?>
+                        <div class="box js-blocks <?php if($i%3===0) echo "first";?> <?php if(($i+1)%3===0) echo "last";?>">
+                            <?php if(has_post_thumbnail()):?>
+                                <?php the_post_thumbnail('medium');?>
+                            <?php endif;?>
+                            <header>
+                                <h3><?php the_title();?></h3>
+                            </header>
+                            <div class="inner-wrapper">
+                                <a href="<?php echo get_permalink();?>" class="button">
+                                    <?php echo $read_more_text;?>
+                                </a>
+                            </div><!--.wrapper-->
+                        </div><!--.box-->
+                        <?php $i++;?>
+                    <?php endwhile;?>
+                </div><!--.row-2-->
+                <?php wp_reset_postdata();
+            endif;?>
+            <div class="bella-pagi">
+                <?php bellaworks_pagi_nav(); ?>
+            </div>
+        </div><!--.wrapper-->
+    </div><!--.row-3-->
  </div><!-- / page content -->
 
 

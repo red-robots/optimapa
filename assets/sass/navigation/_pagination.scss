@@ -1,17 +1,20 @@
 /* Pagination
 -------------------------------------------------------------- */
 
-
+.pavigation {
+	margin: 20px 0 0 0;
+}
 .pavigation li a,
 .pavigation li a:hover,
 .pavigation li.active a,
 .pavigation li.disabled {
 	color: #fff;
 	text-decoration:none;
+	display: block;
 }
 
 .pavigation li {
-	display: inline;
+	display: inline-block;
 }
 
 .pavigation li a,
