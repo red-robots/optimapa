@@ -97,15 +97,9 @@
 		
 		wp_register_script(
 			'font-awesome',
-			'https://use.fontawesome.com/8f931eabc1.js',
+			get_template_directory_uri()."/assets/svg-with-js/js/fontawesome-all.js",
 			array(), '1.0' );
 		wp_enqueue_script('font-awesome');
-		
-		
-		
-	
-		
-		
 	}
 }
  
