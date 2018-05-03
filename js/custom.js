@@ -126,8 +126,6 @@ function printSelection(node){
 				// Initialize Advanced Galleriffic Gallery
 				var gallery = $('#thumbs').galleriffic({
 					delay:                     2500,
-					numThumbs:                 6,
-					preloadAhead:              6,
 					enableTopPager:            false,
 					enableBottomPager:         false,
 					imageContainerSel:         '#slideshow',

@@ -35,7 +35,6 @@ $nextlink = 'Next Project in K-12 Education';}
 
 <div id="project-details" class="<?php echo $projDetails; ?>">
 <h1 class="title-higher"><strong><?php the_title(); ?></strong></h1>
-<div class="proj-read-more"><a href="#about-project">Read More &raquo;</a></div>
 
 
     
