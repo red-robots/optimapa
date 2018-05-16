@@ -35,19 +35,23 @@ $nextlink = 'Next Project in K-12 Education';}
 
 <div id="project-details" class="<?php echo $projDetails; ?>">
 <h1 class="title-higher"><strong><?php the_title(); ?></strong></h1>
-
-
-    
-    <p><?php the_field('project_location'); ?></p>
-    
-    
-     <h3>Project Summary</h3>
-     <p>
-    <?php the_field('project_summary'); ?>
-    </p>
-   
-    <h3>Project Highlights</h3>
-    <?php the_field('project_highlights'); ?>
+	<?php 
+	$summary = get_field('project_summary');
+	$location = get_field('project_location');
+	$highlights = get_field('project_highlights');?>
+	<?php if($location):?>
+		<p><?php echo $location; ?></p>
+	<?php endif;?>
+	<?php if($summary):?>
+		<h3>Project Summary</h3>
+		<p>
+		<?php echo $summary; ?>
+		</p>
+	<?php endif;?>
+	<?php if($highlights):?>
+		<h3>Project Highlights</h3>
+		<?php echo $highlights; ?>
+	<?php endif;?>
     
     
     

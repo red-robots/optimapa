@@ -8,7 +8,7 @@
 
 
 
-<div class="template-projects project-tiles" <?php echo 'style="background-image: url('.get_template_directory_uri().'/images/bg.jpg);"';?>>  
+<div class="template-projects project-tiles">  
 	<div class="wrapper">
 		<header class="row-1">
 			<h2><?php the_title()?></h2>
@@ -23,7 +23,8 @@
 					<?php $image = get_field("featured_image", $term);
 					$fa_text = get_field("font_awesome",$term);
 					if($image):?>
-						<div class="box js-blocks <?php if($i%4===0) echo "first";?> <?php if(($i+1)%4===0) echo "last";?>" <?php echo 'style="background-image: url('.$image['sizes']['large'].');"';?>>
+						<div class="box js-blocks <?php if($i%4===0) echo "first";?> <?php if(($i+1)%4===0) echo "last";?>">
+							<div class="background" <?php echo 'style="background-image: url('.$image['sizes']['large'].');"';?>></div>
 							<?php if($fa_text):?>
 								<div class="font-awesome">
 									<i class="<?php echo $fa_text;?>"></i>

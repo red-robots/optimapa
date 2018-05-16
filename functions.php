@@ -548,7 +548,7 @@ function bellaworks_pagi_nav() {
 }
 ?>
 <?php 
-class Walker_Page_Comma_Separated_List extends Walker {
+/*class Walker_Page_Comma_Separated_List extends Walker {
 	var $tree_type = 'page';
 	var $db_fields = array ('parent' => 'post_parent', 'id' => 'ID');
 	var $separator = ', ';
@@ -570,7 +570,7 @@ class Walker_Page_Comma_Separated_List extends Walker {
 	function end_el( &$output, $page, $depth ) {
 		$output .= '';
 	}
-}
+}*/
 ?>
 <?php
 //
