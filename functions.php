@@ -106,6 +106,20 @@
 add_action('init', 'ineedmyjava');
 ?>
 <?php
+/*-------------------------------------
+	Custom client login, link and title.
+---------------------------------------*/
+function my_login_logo() { ?>
+<style type="text/css">
+	body.login div#login h1 a {
+		background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/images/logo.svg);
+		background-size: 327px 161px;
+		width: 327px;
+		height: 161px;
+	}
+</style>
+<?php }
+add_action( 'login_enqueue_scripts', 'my_login_logo' );
 
 // Add Thumbnail Image Supoort
 // Must have to do featured images.
@@ -573,13 +587,6 @@ function bellaworks_pagi_nav() {
 }*/
 ?>
 <?php
-//
-// Custom login function 
-//
-function custom_login_logo() {
-        echo '<style type="text/css">h1 a { background: url('.get_bloginfo('template_directory').'/images/login-logo.png) 50% 50% no-repeat !important; }</style>';
-}
-add_action('login_head', 'custom_login_logo'); 
 
 function my_login_logo_url() {
     return get_bloginfo( 'url' );
