@@ -40,11 +40,11 @@ wp_title( '|', true, 'right' ); }?>
       <div class="col-1">
         <?php if(is_front_page()) { ?>
           <h1 class="logo">
-            <a href="<?php bloginfo('url'); ?>"><img src="<?php echo get_template_directory_uri()."/images/logo.jpg";?>" alt="Optima Engineering"></a> 
+            <a href="<?php bloginfo('url'); ?>"><img src="<?php echo get_template_directory_uri()."/images/logo.svg";?>" alt="Optima Engineering"></a> 
           </h1>
         <?php } else { ?>
           <div class="logo">
-            <a href="<?php bloginfo('url'); ?>"><img src="<?php echo get_template_directory_uri()."/images/logo.jpg";?>" alt="Optima Engineering"></a> 
+            <a href="<?php bloginfo('url'); ?>"><img src="<?php echo get_template_directory_uri()."/images/logo.svg";?>" alt="Optima Engineering"></a> 
           </div>
         <?php } ?>
       </div><!--.col-1-->
