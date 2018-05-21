@@ -12,7 +12,7 @@ wp_title( '|', true, 'right' ); }?>
 
 
 
-<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>?ver=0124" />
+<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>?ver=0125" />
 <link rel="stylesheet" href="<?php bloginfo( 'template_url' ); ?>/css/basic.css" type="text/css" />
 <link rel="stylesheet" href="<?php bloginfo( 'template_url' ); ?>/css/galleriffic-5.css" type="text/css" />
 <link href='http://fonts.googleapis.com/css?family=Raleway:400,300' rel='stylesheet' type='text/css'>
