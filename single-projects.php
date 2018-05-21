@@ -21,6 +21,10 @@ $nextlink = 'Next Project in K-12 Education';}
 		elseif (has_term('multi-family-mixed-use','categories')) {$projDetails = "pro-det-multi-single"; $myTax = 'multi-family-mixed-use';$nextlink = 'Next Project in Multi Family/Mixed Use';}
 		elseif (has_term('government','categories')) {$projDetails = "pro-det-gov-single"; $myTax = 'government';$nextlink = 'Next Project in Government';}
 		elseif (has_term('more-engineering-projects','categories')) {$projDetails = "pro-det-mo-single"; $myTax = 'more-engineering-projects';$nextlink = 'Next Project in More Engineering Projects';}
+		elseif (has_term('senior-living','categories')) {$projDetails = "pro-det-sl-single"; $myTax = 'senior-living';$nextlink = 'Next Project in Senior Living';}
+		elseif (has_term('technology-low-voltage','categories')) {$projDetails = "pro-det-lvt-single"; $myTax = 'low-voltage-technology';$nextlink = 'Next Project in Low Voltage/Technology';}
+		elseif (has_term('renewable-energy','categories')) {$projDetails = "pro-det-re-single"; $myTax = 'renewable-energy';$nextlink = 'Next Project in Renewable Energy';}
+		elseif (has_term('microgrids-utilities','categories')) {$projDetails = "pro-det-mg-single"; $myTax = 'microgrids-utilities';$nextlink = 'Next Project in Microgrids/Utilities/Industrial';}
 ?>
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
