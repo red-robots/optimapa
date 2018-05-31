@@ -25,7 +25,7 @@ get_header(); ?>
 		
         <?php // image varibles 
 				$attachment_id = get_sub_field('picture');
-				$size = "leadership"; // (thumbnail, medium, large, full or custom size)
+				$size = "full"; // (thumbnail, medium, large, full or custom size)
  				$image = wp_get_attachment_image_src( $attachment_id, $size );
 				//$alt = get_post_meta($attachment->ID, '_wp_attachment_image_alt', true);
 		?>
