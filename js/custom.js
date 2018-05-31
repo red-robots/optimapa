@@ -101,7 +101,6 @@ function printSelection(node){
   
   
   
-  
 
 
 	
@@ -142,7 +141,7 @@ function printSelection(node){
 					nextPageLinkText:          'Next &rsaquo;',
 					prevPageLinkText:          '&lsaquo; Prev',
 					enableHistory:             true,
-					autoStart:                 false,
+					autoStart:                 true,
 					syncTransitions:           true,
 					defaultTransitionDuration: 900,
 					onSlideChange:             function(prevIndex, nextIndex) {

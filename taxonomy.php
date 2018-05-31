@@ -18,9 +18,10 @@
 	 single_cat_title( $prefix = '', $display = true ); } ?>
      </h1>
      
-  
-	<img src="<?php the_field('featured_image', $taxonomy.'_'. $id); ?>" class="alignright" height="400px" />
-  
+    <?php $image = get_field('featured_image', $taxonomy.'_'. $id);
+    if($image):?>
+    	<img src="<?php echo $image['url']; ?>" class="alignright" height="400px" />
+     <?php endif;?>
    
    	<?php echo category_description( $category_id ); ?>
     

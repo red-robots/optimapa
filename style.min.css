@@ -758,7 +758,7 @@ body{margin:0}
 }@media screen and (min-width:1200px){#footer>.wrapper>.row-2>.col.first{margin-left:0}
 }@media screen and (min-width:1200px){#footer>.wrapper>.row-2>.col.last{margin-right:0}
 }#footer>.wrapper>.row-2>.col header h3{font-weight:700;font-size:16px}
-#footer>.wrapper>.row-2>.col .phone{margin:20px 0 0 0}
+#footer>.wrapper>.row-2>.col .phone{margin:20px 0 0 0;color:white !important;text-decoration:none !important}
 #footer>.wrapper>.row-2>.col .email a{color:white}
 #footer>.wrapper>.row-2>.col .sitemap a{color:white}
 #footer>.wrapper>.row-2>.col-4 form input[type=text]{background-color:#8f8f8f;border:2px solid #efefef;font-size:13px;padding:5px;line-height:1;float:left;border-radius:0;color:white;width:calc(100% - 82px)}

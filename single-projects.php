@@ -172,19 +172,17 @@ $nextlink = 'Next Project in K-12 Education';}
      </div>
 </div><!-- the lower content -->
 <div class="lower-tags">
-Areas of Expertise: 
 <?php 
 $cats_tax = get_the_term_list( $post->ID, 'expertise', '<li>', ',</li><li>', '</li>') ;
-?>  
+if(!empty($cats_tax)) echo "Areas of Expertise:";?>  
 <?php echo $cats_tax ?>
 </div><!-- lower tags -->
 
 <?php if(get_the_term_list($post->ID, 'sustainablefeatures')!="") { ?>
 <div class="lower-tags">
-Areas of Sustainable &amp; Resilient: 
 <?php 
 $cats_tax = get_the_term_list( $post->ID, 'sustainablefeatures', '<li>', ',</li><li>', '</li>') ;
-?>  
+if(!empty($cats_tax)) echo "Areas of Sustainable &amp; Resilient:";?>  
 <?php echo $cats_tax ?>
 </div><!-- lower tags -->
 <?php } ?>
