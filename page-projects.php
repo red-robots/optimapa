@@ -24,7 +24,7 @@
 					$fa_text = get_field("font_awesome",$term);
 					if($image):?>
 						<div class="box js-blocks <?php if($i%4===0) echo "first";?> <?php if(($i+1)%4===0) echo "last";?>">
-							<div class="background" <?php echo 'style="background-image: url('.$image['sizes']['large'].');"';?>></div>
+							<div class="background" <?php echo 'style="background-image: url('.$image['sizes']['medium'].');"';?>></div>
 							<?php if($fa_text):?>
 								<div class="font-awesome">
 									<i class="<?php echo $fa_text;?>"></i>

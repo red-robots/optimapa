@@ -7,28 +7,36 @@
 
 jQuery(document).ready(function ($) {
 	
-		  // Print events 
+	
+	/*
+	*
+	*	Equal Heights Divs
+	*
+	------------------------------------*/
+	$('.js-blocks').matchHeight();
+	
+	  // Print events 
 
 
-	function printSelection(node){
+function printSelection(node){
 
-	  var content=node.innerHTML
-	  var pwin=window.open('','print_content','width=100,height=100');
+  var content=node.innerHTML
+  var pwin=window.open('','print_content','width=100,height=100');
 
-	  pwin.document.open();
-	  pwin.document.write('<html><body onload="window.print()">'+content+'</body></html>');
-	  pwin.document.close();
-	 
-	  setTimeout(function(){pwin.close();},1000);
+  pwin.document.open();
+  pwin.document.write('<html><body onload="window.print()">'+content+'</body></html>');
+  pwin.document.close();
+ 
+  setTimeout(function(){pwin.close();},1000);
 
-	}
+}
 	
 		
 	$("[href]").each(function() {
-		if (this.href == window.location.href) {
-			$(this).addClass("active");
-		}
-	});
+    			if (this.href == window.location.href) {
+        	$(this).addClass("active");
+        	}
+    		});
 			
 		/*	if(window.location.href.indexOf("expertise") > -1) {
        $('#main-nav .tree-of-life a').addClass("active");
@@ -51,8 +59,8 @@ jQuery(document).ready(function ($) {
 
 			function() {
 				//hide heading and caption
-				$(this).children('.square-info-1, .square-info-2, .square-info-3, .square-info-4').stop(false,true).animate({top:5},{duration:200, easing: style});
-				$(this).children('.seemore1, .seemore2, .seemore3, .seemore4').stop(true).animate({right:135},{duration:200, easing: style});
+				$(this).children('.square-info-1, .square-info-2, .square-info-3, .square-info-4').stop(false,true).animate({top:0},{duration:200, easing: style});
+				$(this).children('.seemore1, .seemore2, .seemore3, .seemore4').stop(true).animate({right:125},{duration:200, easing: style});
 				$('.home-h3').css({display: 'none'});
 			}
 		);
@@ -69,8 +77,8 @@ jQuery(document).ready(function ($) {
 
 			function() {
 				//hide heading and caption
-				$(this).children('.square-info-5, .square-info-6, .square-info-7, .square-info-8').stop(false,true).animate({top:5},{duration:200, easing: style});
-				$(this).children('.seemore5, .seemore6, .seemore7, .seemore8').stop(true).animate({right:135},{duration:200, easing: style});
+				$(this).children('.square-info-5, .square-info-6, .square-info-7, .square-info-8').stop(false,true).animate({top:0},{duration:200, easing: style});
+				$(this).children('.seemore5, .seemore6, .seemore7, .seemore8').stop(true).animate({right:125},{duration:200, easing: style});
 				$('.home-bottom-h3').css({display: 'none'});
 				$(this).find('.featureproject-bottom').css({display: 'none'});
 			}
@@ -100,7 +108,6 @@ jQuery(document).ready(function ($) {
   
   
   
-  
 
 
 	
@@ -125,8 +132,7 @@ jQuery(document).ready(function ($) {
 				// Initialize Advanced Galleriffic Gallery
 				var gallery = $('#thumbs').galleriffic({
 					delay:                     2500,
-					numThumbs:                 6,
-					preloadAhead:              6,
+					preloadAhead:              10,
 					enableTopPager:            false,
 					enableBottomPager:         false,
 					imageContainerSel:         '#slideshow',
@@ -142,7 +148,7 @@ jQuery(document).ready(function ($) {
 					nextPageLinkText:          'Next &rsaquo;',
 					prevPageLinkText:          '&lsaquo; Prev',
 					enableHistory:             true,
-					autoStart:                 false,
+					autoStart:                 true,
 					syncTransitions:           true,
 					defaultTransitionDuration: 900,
 					onSlideChange:             function(prevIndex, nextIndex) {

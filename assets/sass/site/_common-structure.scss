@@ -304,6 +304,7 @@ body {
 		color: #8D1222;
 		font-weight: 700;
 		text-transform: uppercase;
+		line-height: 1.2;
 
 		@media screen and (min-width: $midwidth) {
 			width: auto;
@@ -326,10 +327,10 @@ body {
 	}
 	img {
 		width: 100%;
-		margin-top: 15px;
+		// margin-top: 15px;
 		@media screen and (min-width: $tabwidth) {
 			width: auto;
-			margin-top:-15px;
+			// margin-top:-15px;
 		}
 	}
 	img.gfield_captcha {
@@ -393,6 +394,7 @@ body {
 		margin-left: 15px;
 	}
 }
+
 #side-tax {
 	float: left;
 	@media screen and (min-width: $tabwidth) {
@@ -472,8 +474,11 @@ img {
 			padding: 10px 0;
 		}
 		>.col-1 {
+			width: 70%;
+			margin: 30px auto;
 			@media screen and (min-width: $tabwidth){
 				width: 20%;
+				margin: 0;
 			}
 			.logo {
 				margin: 0;
@@ -590,8 +595,14 @@ img {
 								display: inline-block;
 								-webkit-transition: all ease 0.3s;
 								transition: all ease 0.3s;
-								padding: 6px 10px;
+								padding: 6px 5px;
 								margin: 0;
+							}
+							@media screen and (min-width: $midwidth) {
+								padding: 6px 8px;
+							}
+							@media screen and (min-width: $deskwidth) {
+								padding: 6px 10px;
 							}
 							&:hover {
 								@media screen and (min-width: $tabwidth) {
@@ -615,6 +626,15 @@ img {
 								font-weight: 500;
 								text-transform: uppercase;
 								color: black;
+								@media screen and (min-width: $tabwidth) {
+									font-size: 14px;
+								}
+								@media screen and (min-width: $midwidth) {
+									font-size: 16px;
+								}
+								@media screen and (min-width: $deskwidth) {
+									font-size: 18px;
+								}
 							}
 							>ul.sub-menu {
 								padding: 0;
@@ -940,3 +960,44 @@ img {
 		}
 	}
 }
+section.leftpage {
+	width: 100%;
+	@media screen and (min-width: $tabwidth) {
+		width: 45%;
+		float: left;
+	}
+	@media screen and (min-width: $deskwidth) {
+		
+	}
+
+}
+section.rightpage {
+	
+	@media screen and (min-width: $tabwidth) {
+		width: 45%;	
+		float: right;
+	}
+	@media screen and (min-width: $deskwidth) {
+		
+	}
+
+}
+.galleryimages {
+	width: 100%;
+	margin: 0 0 15px 0;
+	@media screen and (min-width: $tabwidth) {
+			
+	}
+	@media screen and (min-width: $deskwidth) {
+		
+	}
+	img {
+		width: 100%;
+		line-height: 0;
+	}
+}
+
+
+
+
+

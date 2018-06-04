@@ -81,7 +81,7 @@ wp_list_categories( $listem );
                     while($query->have_posts()): $query->the_post();?>
                         <div class="box js-blocks <?php if($i%3===0) echo "first";?> <?php if(($i+1)%3===0) echo "last";?>">
                             <?php if(has_post_thumbnail()):?>
-                                <?php the_post_thumbnail('full');?>
+                                <?php the_post_thumbnail('tax-descr');?>
                             <?php endif;?>
                             <header>
                                 <h3><?php the_title();?></h3>
