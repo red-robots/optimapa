@@ -24,6 +24,7 @@ get_header(); ?>
 		$images = get_field('gallery');
 
 		if( $images ): ?>
+		<h2>Photo Gallery</h2>
 		    <div class="gallery">
 		        <?php foreach( $images as $image ): ?>
 		            <div class="thumb">
