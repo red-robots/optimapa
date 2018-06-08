@@ -3,6 +3,19 @@ $(document).ready(function () {
 
 	/*
 	*
+	*	Colorbox
+	*
+	------------------------------------*/
+	$('a.gallery').colorbox({
+		rel:'gal',
+		width: '80%', 
+		height: '80%'
+	});
+
+	
+
+	/*
+	*
 	*	Equal Heights Divs
 	*
 	------------------------------------*/

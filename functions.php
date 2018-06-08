@@ -54,6 +54,13 @@
 			get_bloginfo('template_directory') . '/js/jquery.galleriffic.js',
 			array('jquery') );
 		wp_enqueue_script('projgallery');
+
+		// other scripts...
+		wp_register_script(
+			'colorbox',
+			get_bloginfo('template_directory') . '/js/colorbox.js',
+			array('jquery') );
+		wp_enqueue_script('colorbox');
 		
 		
 		// other scripts...

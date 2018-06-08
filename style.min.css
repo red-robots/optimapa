@@ -903,6 +903,9 @@ section.leftpage{width:100%}
 }@media screen and (min-width:600px){section.rightpage{width:45%;float:right}
 }.galleryimages{width:100%;margin:0 0 15px 0}
 .galleryimages img{width:100%;line-height:0}
+.gallery{width:100%;margin:40px 0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between}
+.gallery .thumb{width:75px}
+.gallery .thumb img{width:100%}
 #homepage-content{width:100%;font-size:14px}
 @media screen and (min-width:1200px){#homepage-content{width:1200px;height:445px;margin-left:35px}
 }.home-right{width:100%}
